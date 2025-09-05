@@ -1,3 +1,5 @@
+package.path = package.path .. ";data/scripts/lib/?.lua"
+include("stringutility")
 local cyclic = 1200
 
 function getUpdateInterval() return 1 end
@@ -30,9 +32,9 @@ function payUpdate(pay)
     local player = Player()
 
     local mail = Mail()
-    mail.header = "您好开拓者"
-    mail.sender = "星联激励基金委员会"
-    mail.text = string.format("20min活跃时长激励基金已到账：%d 信用点", pay)
+    mail.header = "您好开拓者"%_t
+    mail.sender = "星联激励基金委员会"%_t
+    mail.text = string.format("20min活跃时长激励基金已到账：%d 信用点"%_t, pay)
 
     mail.money = math.floor(tonumber(pay) or 0)
     mail.id = "online_"

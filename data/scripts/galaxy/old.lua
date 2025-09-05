@@ -101,7 +101,7 @@ function settleXsotanSwarmEvent(state)
         -- | 安定值的最低限制为 600 ,也就是说，即使是失败，也不会低于 200,随着不断地胜利,安定值最终会抵达 2400 的上限
         -- | 但是 2400 并不会提供 48H(4day) 的冷却时间， 而是在 36H(3day) 后抵达上限
         stableValue = 200
-        print("server: 正在初始化安定值 | "..stableValue)
+        print("server: 正在初始化安定值 | ${v}"%_t % {v=stableValue})
     end
 
     if state == "victory" then
@@ -190,22 +190,22 @@ function chatFirstMessage(action, player)
 
     if action == "create" then
         texts = {
-            "传闻一位名为 %s 的旅行者踏上了属于他自己的星海旅途。",
-            "远方出现名为 %s 的探险家，他的故事正在这个星空中开始。",
+            "传闻一位名为 %s 的旅行者踏上了属于他自己的星海旅途。"%_t,
+            "远方出现名为 %s 的探险家，他的故事正在这个星空中开始。"%_t,
         }
     end
     if action == "login" then
         texts = {
-            "经过短暂的休整，%s 再次起航。",
-            "%s 再次启动航程，准备面对新的挑战。",
-            "%s 结束了他短暂的假期，开始新的探险。",
+            "经过短暂的休整，%s 再次起航。"%_t,
+            "%s 再次启动航程，准备面对新的挑战。"%_t,
+            "%s 结束了他短暂的假期，开始新的探险。"%_t,
         }
     end
     if action == "logoff" then
         texts = {
-            "因为日程的结束，%s 关闭了星图。",
-            "或许是旅程已经抵达一个段落，%s 制定了新的休假日程。",
-            "%s 似乎不再活跃，最近星空中也鲜有他的传闻，",
+            "因为日程的结束，%s 关闭了星图。"%_t,
+            "或许是旅程已经抵达一个段落，%s 制定了新的休假日程。"%_t,
+            "%s 似乎不再活跃，最近星空中也鲜有他的传闻，"%_t,
         }
     end
     -- getInt是获取随机整数
@@ -247,14 +247,15 @@ function updatePlayerValue(player, reg, log, day)
         d = d + 1
         player:setValue("logtime",date)
         player:setValue("playday", d)
-        print("updatePlayerValue:检测到" .. player.name .. "今日首次登录")
+        -- print("updatePlayerValue:检测到" .. player.name .. "今日首次登录")
+        print("updatePlayerValue:检测到${name}今日首次登录"%_t % {name=player.name})
         -- payday(player)
     else
     end
-    player:sendChatMessage("系统", ChatMessageType.Information, "欢迎来到CN繁星启航")
+    player:sendChatMessage("系统", ChatMessageType.Information, "欢迎来到CN繁星启航"%_t)
     -- player:sendChatMessage("系统", ChatMessageType.Information, "您的注册日期为：" .. reg)
     -- player:sendChatMessage("系统", ChatMessageType.Information, "您的游戏天数为：" .. d)
-    player:sendChatMessage("系统", ChatMessageType.Information, "祝君武运昌隆")
+    player:sendChatMessage("系统", ChatMessageType.Information, "祝君武运昌隆"%_t)
 end
 
 function regPlayerValue(player)
@@ -264,7 +265,7 @@ function regPlayerValue(player)
     if not reg then
         -- print("regPlayerValue:正在注册 " .. player.name .. " 注册账号日期")
         player:setValue("regtime",date)
-        player:sendChatMessage("系统", ChatMessageType.Information, "成功注册新玩家数据。您的注册日期为：" .. date)
+        player:sendChatMessage("系统", ChatMessageType.Information, "成功注册新玩家数据。您的注册日期为：${date}"%_t % {date=date})
     end
     if not log then
         -- print("regPlayerValue:正在注册 " .. player.name .. " 最后登录日期")
@@ -299,14 +300,9 @@ if onServer() then
     local updates = player:getValue("only_newPlayer")
     if not updates then
         local mail = Mail()
-        mail.header = "欢迎来到繁星启航服务器"%_T --标题
-        mail.sender = "繁星服务器 管理员" --名字
-        mail.text = "新来的冒险家您好:\n\n"
-        .."为了保证所有的冒险家的游玩体验请您务必阅读并遵守以下规则:\n"
-        .. "1.避免使用堆叠方块舰船/空间站进行游戏，这会导致服务器崩溃。\n"
-        .."2.禁止使用恶性Bug对副武器造成破坏/影响其他玩家正常游戏。\n\n"
-        .."如果拥有疑惑或者需要帮助    欢迎加入Avorion游戏讨论QQ群:249540861\n"
-        .."以上\n祝君武运昌隆"
+        mail.header = "欢迎来到繁星启航服务器"%_t --标题
+        mail.sender = "繁星服务器 管理员"%_t --名字
+        mail.text = "新来的冒险家您好:\n\n为了保证所有的冒险家的游玩体验请您务必阅读并遵守以下规则:\n1.避免使用堆叠方块舰船/空间站进行游戏，这会导致服务器崩溃。\n2.禁止使用恶性Bug对副武器造成破坏/影响其他玩家正常游戏。\n\n如果拥有疑惑或者需要帮助    欢迎加入Avorion游戏讨论QQ群:249540861\n以上\n祝君武运昌隆"%_t
         mail.money = 520
         mail:setResources(95000, 45000, 648)
         mail.id = "NewPlayer"

@@ -1,5 +1,5 @@
 package.path = package.path .. ";data/scripts/lib/?.lua"
-
+include ("stringutility")
 function execute(sender, commandName)
 
     local player = Player()
@@ -20,9 +20,9 @@ function execute(sender, commandName)
 end
 
 function getDescription()
-    return "启用调试面板"
+    return "启用调试面板"%_t
 end
 
 function getHelp()
-    return "打开调试面板: /debug"
+    return "打开调试面板: /debug"%_t
 end
