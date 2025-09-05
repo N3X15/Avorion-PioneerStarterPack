@@ -1,3 +1,16 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.7\n"
+
 # ========== C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/commands/debug.lua ==========
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/commands/debug.lua:
 msgid "启用调试面板"
@@ -6,7 +19,6 @@ msgstr "启用调试面板"
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/commands/debug.lua:
 msgid "打开调试面板: /debug"
 msgstr "打开调试面板: /debug"
-
 
 # ========== C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua ==========
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
@@ -71,7 +83,7 @@ msgstr "updatePlayerValue:检测到${name}今日首次登录"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid "欢迎来到${servername}"
-msgstr ""
+msgstr "欢迎来到${servername}"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid "祝君武运昌隆"
@@ -83,16 +95,33 @@ msgstr "成功注册新玩家数据。您的注册日期为：${date}"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid "服务器管理员"
-msgstr ""
+msgstr "服务器管理员"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
-msgid "新来的冒险家您好:\n\n为了保证所有的冒险家的游玩体验请您务必阅读并遵守以下规则:\n1.避免使用堆叠方块舰船/空间站进行游戏，这会导致服务器崩溃。\n2.禁止使用恶性Bug对副武器造成破坏/影响其他玩家正常游戏。\n\n如果拥有疑惑或者需要帮助    欢迎加入Avorion游戏讨论QQ群:249540861\n以上\n祝君武运昌隆"
-msgstr "新来的冒险家您好:\n\n为了保证所有的冒险家的游玩体验请您务必阅读并遵守以下规则:\n1.避免使用堆叠方块舰船/空间站进行游戏，这会导致服务器崩溃。\n2.禁止使用恶性Bug对副武器造成破坏/影响其他玩家正常游戏。\n\n如果拥有疑惑或者需要帮助    欢迎加入Avorion游戏讨论QQ群:249540861\n以上\n祝君武运昌隆"
+msgid ""
+"新来的冒险家您好:\n"
+"\n"
+"为了保证所有的冒险家的游玩体验请您务必阅读并遵守以下规则:\n"
+"1.避免使用堆叠方块舰船/空间站进行游戏，这会导致服务器崩溃。\n"
+"2.禁止使用恶性Bug对副武器造成破坏/影响其他玩家正常游戏。\n"
+"\n"
+"如果拥有疑惑或者需要帮助    欢迎加入Avorion游戏讨论QQ群:249540861\n"
+"以上\n"
+"祝君武运昌隆"
+msgstr ""
+"新来的冒险家您好:\n"
+"\n"
+"为了保证所有的冒险家的游玩体验请您务必阅读并遵守以下规则:\n"
+"1.避免使用堆叠方块舰船/空间站进行游戏，这会导致服务器崩溃。\n"
+"2.禁止使用恶性Bug对副武器造成破坏/影响其他玩家正常游戏。\n"
+"\n"
+"如果拥有疑惑或者需要帮助    欢迎加入Avorion游戏讨论QQ群:249540861\n"
+"以上\n"
+"祝君武运昌隆"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid "欢迎来到繁星启航服务器"
 msgstr "欢迎来到繁星启航服务器"
-
 
 # ========== C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua ==========
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
@@ -132,9 +161,18 @@ msgid "星河开拓联盟"
 msgstr "星河开拓联盟"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
-msgid "欢迎加入银河开拓之旅:\n\n星联将为每一位新晋开拓者发放新人福利\n感谢您加入宇宙开拓，为支持您的初期发展，特此奉上启动资源包\n祝君武运昌隆"
-msgstr "欢迎加入银河开拓之旅:\n\n星联将为每一位新晋开拓者发放新人福利\n感谢您加入宇宙开拓，为支持您的初期发展，特此奉上启动资源包\n祝君武运昌隆"
-
+msgid ""
+"欢迎加入银河开拓之旅:\n"
+"\n"
+"星联将为每一位新晋开拓者发放新人福利\n"
+"感谢您加入宇宙开拓，为支持您的初期发展，特此奉上启动资源包\n"
+"祝君武运昌隆"
+msgstr ""
+"欢迎加入银河开拓之旅:\n"
+"\n"
+"星联将为每一位新晋开拓者发放新人福利\n"
+"感谢您加入宇宙开拓，为支持您的初期发展，特此奉上启动资源包\n"
+"祝君武运昌隆"
 
 # ========== C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/player/onlinepay.lua ==========
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/player/onlinepay.lua:
@@ -148,13 +186,3 @@ msgstr "星联激励基金委员会"
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/player/onlinepay.lua:
 msgid "20min活跃时长激励基金已到账：%d 信用点"
 msgstr "20min活跃时长激励基金已到账：%d 信用点"
-
-
-# ========== old ==========
-# msgid "欢迎来到CN繁星启航"
-# msgstr "欢迎来到CN繁星启航"
-
-# msgid "繁星服务器 管理员"
-# msgstr "繁星服务器 管理员"
-
-

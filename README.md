@@ -1,4 +1,5 @@
 # Pioneer Starter Pack
+***GitHub: https://github.com/N3X15/Avorion-PioneerStarterPack***
 
 This is an open-source, translated version of [开拓者礼包--PioneerStarterPack by 丢雷楼某](https://steamcommunity.com/sharedfiles/filedetails/?id=3441802113).
 
