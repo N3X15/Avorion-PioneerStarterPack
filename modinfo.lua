@@ -8,19 +8,21 @@ meta =
 
     -- Name of your mod; You may want this to be unique, but it's not absolutely necessary.
     -- This is an additional helper attribute for you to easily identify your mod in the Mods() list
-    name = "开拓者礼包 - PioneerStarterPack",
+    name = "Pioneer Starter Pack",
 
     -- Title of your mod that will be displayed to players
-    title = "开拓者礼包 - PioneerStarterPack",
+    title = "Pioneer Starter Pack",
 
     -- Type of your mod, either "mod" or "factionpack"
     type = "mod",
 
     -- Description of your mod that will be displayed to players
-    description = "[游戏开始时赠送初始物资包，包含资源和装备。同时给予在线奖励]",
+    -- description = "[游戏开始时赠送初始物资包，包含资源和装备。同时给予在线奖励]",
+    description =
+    "At the beginning of the game, you will be given an initial supply package containing resources and equipment. You will also be given online rewards.",
 
     -- Insert all authors into this list
-    authors = {"逆夜,丢雷楼某"},
+    authors = {"逆夜,丢雷楼某", "N3X15"},
 
     -- Version of your mod, should be in format 1.0.0 (major.minor.patch) or 1.0 (major.minor)
     -- This will be used to check for unmet dependencies or incompatibilities, and to check compatibility between clients and dedicated servers with mods.

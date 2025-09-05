@@ -1,0 +1,7 @@
+binary-mimes:
+- image/png
+- image/jpg
+- image/gif
+- image/ico
+- audio/ogg
+exceptions: []

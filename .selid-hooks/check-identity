@@ -1,0 +1,84 @@
+import mimetypes
+import os
+import re
+import subprocess
+import sys
+from pathlib import Path
+
+from ruamel.yaml import YAML as Yaml
+
+mimetypes.init()
+
+yaml = Yaml(typ='rt')
+
+SELID_DIR = Path('C:\\Users\\N3X15\\scoop\\apps\\python\\current\\python.exe') #Replaced by ASTReBuilder
+REPO_DIR = Path('C:\\Users\\N3X15\\AppData\\Roaming\\Avorion\\mods\\workshop\\PioneerStarterPack') #Replaced by ASTReBuilder
+
+cfg = {}
+
+identities = Path.home() / '.git-identity.yml'
+with identities.open('r') as f:
+    cfg = yaml.load(f)
+identity = subprocess.check_output(['git', 'config', '--local', 'user.selected-identity']).decode('utf-8').strip()
+
+bannedpatterns = []
+for k, d in cfg.items():
+    if k == identity:
+        continue
+    bannedpatterns += cfg[k].get('hide-patterns', [])
+
+OKFILES = []
+CONFIG_FILE = Path.cwd() / '.check-identity'
+CONFIG = {
+    'binary-mimes': [
+        'image/png',
+        'image/jpg',
+        'image/gif',
+        'image/ico',
+        'audio/ogg',
+    ],
+    'exceptions': []
+}
+
+if CONFIG_FILE.is_file():
+    with CONFIG_FILE.open('r') as f:
+        CONFIG = yaml.load(f)
+else:
+    with CONFIG_FILE.open('w') as f:
+        yaml.dump(CONFIG, f)
+
+
+o = subprocess.check_output(['git', 'diff', '--cached', '--name-only', '-z'])
+o = o.decode('utf-8')
+bad = 0
+for filename in o.split('\0'):
+    filename = filename.strip()
+    if filename == '':
+        continue
+    if not os.path.isfile(os.path.join(REPO_DIR, filename)):
+        print('Skipped %s (missing)', filename)
+        continue
+    mimetype = mimetypes.guess_type(filename)
+    print('Checking %s (%s)...', filename, mimetype[0])
+    subj = os.path.join(REPO_DIR, filename)
+    if mimetype[0] in CONFIG.get('binary-mimes', []):
+        print('  Skipped (binary)')
+        continue
+    try:
+        with open(subj, 'r') as f:
+            ln=0
+            for line in f:
+                ln += 1
+                line = line.rstrip()
+                for pattern in bannedpatterns:
+                    m = re.match(pattern, line, re.IGNORECASE)
+                    if m is not None:
+                        if m.group(0) in CONFIG.get('exceptions', []):
+                            print('  [BYPASSED!] Pattern %r matches %s line %s: %r', pattern, filename, ln, line)
+                        else:
+                            print('  Pattern %r matches %s line %s: %r', pattern, filename, ln, line)
+                            print('  To bypass, add %r to .check-identity.yml:exceptions.', m.group(0))
+                            bad = 1
+    except UnicodeDecodeError:
+        print('Skipped (UnicodeDecodeError)')
+sys.exit(bad)
