@@ -1,3 +1,4 @@
 /.selid-hooks
 /.pre-commit-config.yaml
 /.check-identity
+*.mo

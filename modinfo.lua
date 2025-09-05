@@ -4,11 +4,11 @@ meta =
     -- ID of your mod; Make sure this is unique!
     -- Will be used for identifying the mod in dependency lists
     -- Will be changed to workshop ID (ensuring uniqueness) when you upload the mod to the workshop
-    id = "3441802113",
+    id = "PioneerStarterPack",
 
     -- Name of your mod; You may want this to be unique, but it's not absolutely necessary.
     -- This is an additional helper attribute for you to easily identify your mod in the Mods() list
-    name = "Pioneer Starter Pack",
+    name = "PioneerStarterPack",
 
     -- Title of your mod that will be displayed to players
     title = "Pioneer Starter Pack",
@@ -60,5 +60,6 @@ meta =
     saveGameAltering = true,
 
     -- Contact info for other users to reach you in case they have questions
-    contact = "cniye@qq.com",
+    -- contact = "cniye@qq.com",
+    contact = "nexisentertainment@gmail.com",
 }

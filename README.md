@@ -1,43 +1,38 @@
-# NIYE-System
+# Pioneer Starter Pack
 
+This is an open-source, translated version of [开拓者礼包--PioneerStarterPack by 丢雷楼某](https://steamcommunity.com/sharedfiles/filedetails/?id=3441802113).
 
-  这是一个 avorion 的mod ： 本模组增加了一些厂商，他们对系统插件做出了改进和升级。
+Pioneer Starter Pack rewards players for being online by paying them in in-game credits, up to 100k every 20 minutes.
 
-创意工坊链接：https://steamcommunity.com/sharedfiles/filedetails/?id=3024105678
+In addition, new players are given a start pack currently consisting of:
+* 50,000 Credits
+* 5,000 Iron
+* Unusual (Green) Civil Fire Control Expansion Module x1
+* Unusual (Green) Military Fire Control Expansion Module x1
+* Unusual (Green) Refined Mining Laser x1
 
-简介：
+## Major Changes
 
-自从裂隙蔓延形成一道屏障将星系中心隔绝之后，原先辉煌的科技也逐渐失去光芒。时间可能会埋没伤痛，也可能加深创伤，人们失去了从前的骄傲和自信，逐渐变得自私且傲慢。
+* The original pack was tailored specifically to a specific server run by 丢雷楼某.  I am doing my best to strip out any branded content.
+* Translations were largely done by Google Translate.  I have looked at it with my own eyes and cleaned up the worst of it, but I fully expect to have screwed up a lot.
 
-派系间为了领地和资源互相战争。海盗在星空中猖獗，肆意掠夺和屠杀弱者。诡异的宗教又给星系中蒙上一层阴影。
+## Plans
 
-但在这样一个混乱和黑暗的时代，总有一些人不甘于沉沦和放弃。他们或许为了追求更强的实力而不惜冒险和牺牲，或许为了实现更伟大的理想而不畏艰难和挫折。
+* More languages (PRs welcome)
+  * [x] English (en)
+  * [ ] French (fr)
+  * [ ] Japanese (jp)
+  * [ ] Brazilian (pt-br)
+  * [ ] Russian (ru)
+  * [x] Simplified Chinese (zh)
+* Configuration
+  * [ ] Welcome e-mail
+  * [ ] Reward Sender
+  * [ ] Reward Text
+  * [ ] Reward Amount/Scaling
 
-总之，他们耗费了常人不敢想象的资金和力量，试图找回以往的那份光辉。
+## License
 
-===================================================================
-说明：
+The original mod this was derived from seems to be under the MIT license, but if the mod author wants me to change that, it's fine.
 
-Mod的插件整合在原版上，这样有一个好处，就是你即便是卸载本Mod，也能正常游戏而不用担心后遗症。
-
-本模组主要功能为加强了原版的 单一插件 强度。在原版的7级(破烂~史诗)之上增加最多 三 级的 性能提升(不增加稀有度)
-
-识别方法为：独特的图标和名字，已经更强的性能！
-
-====================================================================
-
-
-目前厂牌已成功植入大部分插件
-以下因为平衡性/必要性将不会植入：
-
-主机稳定接线
-航速控制系统
-交易跃增系统
-
-以下因为 DLC 问题将不会植入：
-
-变色龙
-斯芬克斯
-货箱注入器
-
-
+**Please feel free to make Pull Requests with corrections or other languages.**

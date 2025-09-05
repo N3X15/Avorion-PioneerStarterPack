@@ -240,6 +240,7 @@ end
 function updatePlayerValue(player, reg, log, day)
     local time = os.time()
     local date = os.date("%Y-%m-%d",time)
+    local server = Server()
 
     local d = day
     if log < date then
@@ -252,7 +253,7 @@ function updatePlayerValue(player, reg, log, day)
         -- payday(player)
     else
     end
-    player:sendChatMessage("系统", ChatMessageType.Information, "欢迎来到CN繁星启航"%_t)
+    player:sendChatMessage("系统", ChatMessageType.Information, "欢迎来到${servername}"%_t % {servername=server.name})
     -- player:sendChatMessage("系统", ChatMessageType.Information, "您的注册日期为：" .. reg)
     -- player:sendChatMessage("系统", ChatMessageType.Information, "您的游戏天数为：" .. d)
     player:sendChatMessage("系统", ChatMessageType.Information, "祝君武运昌隆"%_t)
@@ -298,10 +299,11 @@ if onServer() then
     -- end
 
     local updates = player:getValue("only_newPlayer")
+    local server = Server()
     if not updates then
         local mail = Mail()
-        mail.header = "欢迎来到繁星启航服务器"%_t --标题
-        mail.sender = "繁星服务器 管理员"%_t --名字
+        mail.header = "欢迎来到${servername}"%_t % {servername=server.name} --标题
+        mail.sender = "服务器管理员"%_t --Server administrator (backtranslated)
         mail.text = "新来的冒险家您好:\n\n为了保证所有的冒险家的游玩体验请您务必阅读并遵守以下规则:\n1.避免使用堆叠方块舰船/空间站进行游戏，这会导致服务器崩溃。\n2.禁止使用恶性Bug对副武器造成破坏/影响其他玩家正常游戏。\n\n如果拥有疑惑或者需要帮助    欢迎加入Avorion游戏讨论QQ群:249540861\n以上\n祝君武运昌隆"%_t
         mail.money = 520
         mail:setResources(95000, 45000, 648)

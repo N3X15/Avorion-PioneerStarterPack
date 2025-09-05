@@ -1,0 +1,157 @@
+# ========== C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/commands/debug.lua ==========
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/commands/debug.lua:
+msgid "启用调试面板"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/commands/debug.lua:
+msgid "打开调试面板: /debug"
+msgstr ""
+
+
+# ========== C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua ==========
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+msgid "server: 正在初始化安定值 | ${v}"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+msgid "裂隙研究所: 屏障内的空间仍然不稳定,就如同一个千疮百孔的篓子,我们担心它们会很快卷土重来..."
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+msgid "裂隙研究所: 屏障内一部分空间已经趋于平静,我们应该可以享受片刻的安宁了."
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+msgid "裂隙研究所: 屏障内大部分空间已经彻底平静,一段时间内索坦都不再可能袭来了."
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+msgid "裂隙研究所: 索坦将会在很长一段时间陷入沉寂,但是我们的战争似乎永远也无法结束..."
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+msgid "裂隙研究所: 但这已经是最好的结果了,不是吗?"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+msgid "传闻一位名为 %s 的旅行者踏上了属于他自己的星海旅途。"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+msgid "远方出现名为 %s 的探险家，他的故事正在这个星空中开始。"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+msgid "经过短暂的休整，%s 再次起航。"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+msgid "%s 再次启动航程，准备面对新的挑战。"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+msgid "%s 结束了他短暂的假期，开始新的探险。"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+msgid "因为日程的结束，%s 关闭了星图。"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+msgid "或许是旅程已经抵达一个段落，%s 制定了新的休假日程。"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+msgid "%s 似乎不再活跃，最近星空中也鲜有他的传闻，"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+msgid "updatePlayerValue:检测到${name}今日首次登录"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+msgid "欢迎来到${servername}"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+msgid "祝君武运昌隆"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+msgid "成功注册新玩家数据。您的注册日期为：${date}"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+msgid "服务器管理员"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+msgid "新来的冒险家您好:\n\n为了保证所有的冒险家的游玩体验请您务必阅读并遵守以下规则:\n1.避免使用堆叠方块舰船/空间站进行游戏，这会导致服务器崩溃。\n2.禁止使用恶性Bug对副武器造成破坏/影响其他玩家正常游戏。\n\n如果拥有疑惑或者需要帮助    欢迎加入Avorion游戏讨论QQ群:249540861\n以上\n祝君武运昌隆"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+msgid "欢迎来到繁星启航服务器"
+msgstr ""
+
+
+# ========== C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua ==========
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
+msgid "%s 结束了他短暂的假期，开始了新的开拓之旅。"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
+msgid "%s 已接管舰队指挥权限，欢迎指挥官接管舰队。"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
+msgid "%s --舰队已整装完毕--，--等待指挥官命令--。"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
+msgid "登入信息"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
+msgid "updatePlayerValue:检测到${name}登入信息"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
+msgid "欢迎开拓者"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
+msgid "祝君好运"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
+msgid "您好新晋开拓者"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
+msgid "星河开拓联盟"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
+msgid "欢迎加入银河开拓之旅:\n\n星联将为每一位新晋开拓者发放新人福利\n感谢您加入宇宙开拓，为支持您的初期发展，特此奉上启动资源包\n祝君武运昌隆"
+msgstr ""
+
+
+# ========== C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/player/onlinepay.lua ==========
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/player/onlinepay.lua:
+msgid "您好开拓者"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/player/onlinepay.lua:
+msgid "星联激励基金委员会"
+msgstr ""
+
+#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/player/onlinepay.lua:
+msgid "20min活跃时长激励基金已到账：%d 信用点"
+msgstr ""
+
+
+# ========== old ==========
+# msgid "欢迎来到CN繁星启航"
+# msgstr ""
+
+
