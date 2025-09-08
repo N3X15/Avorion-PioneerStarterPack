@@ -57,8 +57,8 @@ function updatePlayerValue(player, reg, log, day)
         print("updatePlayerValue: ${name} login information detected"%_t % {name=player.name})
         payday(player)
     end
-    player:sendChatMessage("系统", ChatMessageType.Information, "Welcome Pioneers"%_t)
-    player:sendChatMessage("系统", ChatMessageType.Information, "Good luck"%_t)
+    player:sendChatMessage("System"%_t, ChatMessageType.Information, "Welcome Pioneers"%_t)
+    player:sendChatMessage("System"%_t, ChatMessageType.Information, "Good luck"%_t)
 end
 
 function regPlayerValue(player)
@@ -83,7 +83,7 @@ function payUpdate(player)
         local mail = Mail()
         mail.header = "Hello New Pioneers"%_t --标题
         mail.sender = "Galaxy Development Alliance"%_t --名字
-        mail.text = "欢迎加入银河开拓之旅:\n\n星联将为每一位新晋开拓者发放新人福利\n感谢您加入宇宙开拓，为支持您的初期发展，特此奉上启动资源包\n祝君武运昌隆"%_t
+        mail.text = "Welcome to the galactic exploration journey:\n\nStar Alliance will provide newcomer benefits to every new pioneer.\nThank you for joining the galactic exploration journey. To support your initial development, we offer you a starter resource pack.\nWishing you great military success."%_t
         mail.money = 50000
         mail:setResources(5000)
         mail.id = "NewDay"

@@ -253,10 +253,10 @@ function updatePlayerValue(player, reg, log, day)
         -- payday(player)
     else
     end
-    player:sendChatMessage("系统", ChatMessageType.Information, "Welcome to ${servername}"%_t % {servername=server.name})
-    -- player:sendChatMessage("系统", ChatMessageType.Information, "您的注册日期为：" .. reg)
-    -- player:sendChatMessage("系统", ChatMessageType.Information, "您的游戏天数为：" .. d)
-    player:sendChatMessage("系统", ChatMessageType.Information, "Good hunting"%_t)
+    player:sendChatMessage("System"%_t, ChatMessageType.Information, "Welcome to ${servername}"%_t % {servername=server.name})
+    -- player:sendChatMessage("System"%_t, ChatMessageType.Information, "您的注册日期为：" .. reg)
+    -- player:sendChatMessage("System"%_t, ChatMessageType.Information, "您的游戏天数为：" .. d)
+    player:sendChatMessage("System"%_t, ChatMessageType.Information, "Good hunting"%_t)
 end
 
 function regPlayerValue(player)
@@ -266,7 +266,7 @@ function regPlayerValue(player)
     if not reg then
         -- print("regPlayerValue:正在注册 " .. player.name .. " 注册账号日期")
         player:setValue("regtime",date)
-        player:sendChatMessage("系统", ChatMessageType.Information, "Successfully registered new player data. Your registration date is: ${date}"%_t % {date=date})
+        player:sendChatMessage("System"%_t, ChatMessageType.Information, "Successfully registered new player data. Your registration date is: ${date}"%_t % {date=date})
     end
     if not log then
         -- print("regPlayerValue:正在注册 " .. player.name .. " 最后登录日期")
@@ -304,7 +304,7 @@ if onServer() then
         local mail = Mail()
         mail.header = "Welcome to ${servername}"%_t % {servername=server.name} --标题
         mail.sender = "Server Administrator"%_t --Server administrator (backtranslated)
-        mail.text = "你好，新冒险家！\n\n为了确保本服务器所有玩家都能享受愉快的游戏体验，请遵守MOTD中规定的规则。\n\n如有任何疑问或需要帮助，请加入服务器的Discord频道。\n\n祝你好运！"%_t
+        mail.text = "Hello, new adventurer!\n\nTo ensure a pleasant gaming experience for all on this server, please follow the rules as set out in the MOTD.\n\nIf you have any questions or need any help, please join the server's Discord channel.\n\nBest of luck!"%_t
         mail.money = 520
         mail:setResources(95000, 45000, 648)
         mail.id = "NewPlayer"
