@@ -15,166 +15,200 @@ msgstr ""
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/commands/debug.lua:
 msgid "Enable Debug Panel"
-msgstr ""
+msgstr "Aktivieren Sie das Debug -Panel"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/commands/debug.lua:
 msgid "Open the debug panel: /debug"
-msgstr ""
+msgstr "Öffnen Sie das Debug -Panel: /debug"
 
 # ==========
 # C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua
 # ==========
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid "server: Initializing stability value | ${v}"
-msgstr ""
+msgstr "Server: Stabilitätswert initialisieren | ${v}"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid ""
-"Rift Research Institute: The space within the barrier remains unstable, like "
-"a broken basket. We fear they will soon return..."
+"Rift Research Institute: The space within the barrier remains unstable, "
+"like a broken basket. We fear they will soon return..."
 msgstr ""
+"Rift Research Institute: Der Raum innerhalb der Barriere bleibt instabil, "
+"wie ein gebrochener Korb. Wir befürchten, dass sie bald zurückkehren "
+"werden ..."
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid ""
-"Rift Research Institute: A portion of the barrier has calmed down. We should "
-"be able to enjoy a moment of peace."
+"Rift Research Institute: A portion of the barrier has calmed down. We "
+"should be able to enjoy a moment of peace."
 msgstr ""
+"Rift Research Institute: Ein Teil der Barriere hat sich beruhigt. Wir "
+"sollten in der Lage sein, einen Moment des Friedens zu genießen."
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid ""
 "Rift Research Institute: Most of the space within the barrier has become "
 "completely peaceful, and a Xsotan attack is unlikely for some time."
 msgstr ""
+"Rift Research Institute: Der größte Teil des Raums innerhalb der Barriere "
+"ist völlig friedlich geworden, und ein Xsotan -Angriff ist für einige Zeit "
+"unwahrscheinlich."
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid ""
 "Rift Research Institute: The Xsotan will be silent for a long time, but our "
 "war seems to never end..."
 msgstr ""
+"Rift Research Institute: Der Xsotan wird lange schweigen, aber unser Krieg "
+"scheint niemals zu enden ..."
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid "Rift Research Institute: But this is the best outcome, isn't it?"
-msgstr ""
+msgstr "Rift Research Institute: Aber das ist das beste Ergebnis, nicht wahr?"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid ""
 "Rumor has it that a traveler named %s has embarked on a journey across the "
 "stars."
 msgstr ""
+"Gerüchten zufolge hat sich ein Reisender namens %s auf eine Reise über die "
+"Sterne begonnen."
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid ""
 "An explorer named %s appears in the distance, and his story begins in this "
 "starry sky."
 msgstr ""
+"Ein Entdecker namens %s erscheint in der Ferne, und seine Geschichte "
+"beginnt in diesem Sternenhimmel."
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid "After a short rest, %s set sail again."
-msgstr ""
+msgstr "Nach einer kurzen Pause legten %s wieder segel."
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid "%s sets sail again, ready to face new challenges."
 msgstr ""
+"%s setzt wieder segeln und bereit, sich neuen Herausforderungen zu stellen."
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid "%s ends his short vacation and embarks on a new adventure."
-msgstr ""
+msgstr "%s beendet seinen Kurzurlaub und beginnt ein neues Abenteuer."
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid "Due to the end of his schedule, %s closed the star map."
-msgstr ""
+msgstr "Aufgrund des Ende seines Zeitplans schloss %s die Sternkarte."
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid ""
 "Perhaps because the journey has reached a certain stage, %s has made a new "
 "vacation schedule."
 msgstr ""
+"Vielleicht, weil die Reise eine bestimmte Bühne erreicht hat, hat %s einen "
+"neuen Urlaubsplan gemacht."
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid ""
 "%s seems to be no longer active, and there are few rumors about him in the "
 "stars recently."
 msgstr ""
+"%s scheint nicht mehr aktiv zu sein, und es gibt in letzter Zeit nur wenige "
+"Gerüchte über ihn in den Sternen."
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid ""
 "updatePlayerValue: Detected that ${name} logged in for the first time today"
 msgstr ""
+"updatePlayervalue: Erfuhr, dass $ {name} heute zum ersten Mal angemeldet ist"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid "Welcome to ${servername}"
-msgstr ""
+msgstr "Willkommen bei ${servername}"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid "Good hunting"
-msgstr ""
+msgstr "Waidmanns Heil"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid ""
 "Successfully registered new player data. Your registration date is: ${date}"
 msgstr ""
+"Erfolgreich registrierte neue Spielerdaten. Ihr Registrierungsdatum lautet: "
+"${date}"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid "Server Administrator"
-msgstr ""
+msgstr "Serveradministrator"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid ""
 "Hello, new adventurer!\n"
 "\n"
-"To ensure a pleasant gaming experience for all on this server, please follow "
-"the rules as set out in the MOTD.\n"
+"To ensure a pleasant gaming experience for all on this server, please "
+"follow the rules as set out in the MOTD.\n"
 "\n"
-"If you have any questions or need any help, please join the server's Discord "
-"channel.\n"
+"If you have any questions or need any help, please join the server's "
+"Discord channel.\n"
 "\n"
 "Best of luck!"
 msgstr ""
+"Hallo, neuer Abenteurer!\n"
+"\n"
+"Um ein angenehmes Spielerlebnis für alle auf diesem Server zu "
+"gewährleisten, befolgen Sie bitte die im MOTD festgelegten Regeln.\n"
+"\n"
+"Wenn Sie Fragen haben oder Hilfe benötigen, nehmen Sie bitte den Discord "
+"-Kanal des Servers bei.\n"
+"\n"
+"Viel Glück!"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
 msgid "Welcome to the Starry Sailing Server"
-msgstr ""
+msgstr "Willkommen im Starry Sailing Server"
 
 # ==========
 # C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua
 # ==========
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
 msgid "%s ended his short vacation and started a new pioneering journey."
-msgstr ""
+msgstr "%s beendete seinen kurzen Urlaub und begann eine neue Pionierreise."
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
 msgid ""
 "%s has taken over the command of the fleet. Commander, welcome to take over "
 "the fleet."
 msgstr ""
+"%s hat das Kommando der Flotte übernommen. Kommandant, willkommen, die "
+"Flotte zu übernehmen."
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
 msgid "%s --The fleet is ready--, --awaiting the commander's orders--."
 msgstr ""
+"%s-Die Flotte ist bereit-,-auf die Befehle des Befehlshabers zu erwarten."
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
 msgid "Login information"
-msgstr ""
+msgstr "Anmeldeinformationen"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
 msgid "updatePlayerValue: ${name} login information detected"
-msgstr ""
+msgstr "updatePlayervalue: ${name} Anmeldeinformationen erkannt"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
 msgid "Welcome Pioneers"
-msgstr ""
+msgstr "Willkommen Pioniere"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
 msgid "Good luck"
-msgstr ""
+msgstr "Viel Glück"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
 msgid "Hello New Pioneers"
-msgstr ""
+msgstr "Hallo neue Pioniere"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
 msgid "Galaxy Development Alliance"
-msgstr ""
+msgstr "Galaxy Development Alliance"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
 msgid ""
@@ -185,18 +219,27 @@ msgid ""
 "initial development, we offer you a starter resource pack.\n"
 "Wishing you great military success."
 msgstr ""
+"Willkommen auf der Galaktischen Erkundungsreise:\n"
+"\n"
+"Star Alliance bietet jedem neuen Pionier Newcomer -Vorteile.\n"
+"Vielen Dank, dass Sie sich der Galactic Exploration Journey angeschlossen "
+"haben. Um Ihre erste Entwicklung zu unterstützen, bieten wir Ihnen ein "
+"Starter -Ressourcenpaket an.\n"
+"Ich wünsche Ihnen einen guten militärischen Erfolg."
 
 # ==========
 # C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/player/onlinepay.lua
 # ==========
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/player/onlinepay.lua:
 msgid "Hello Pioneer"
-msgstr ""
+msgstr "Hallo Pioneer"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/player/onlinepay.lua:
 msgid "Star Alliance Incentive Fund Committee"
-msgstr ""
+msgstr "Star Alliance Incentive Fund Committee"
 
 #: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/player/onlinepay.lua:
 msgid "20min active time incentive fund has been received: %d credit points"
 msgstr ""
+"Der 20 -minütige aktive zeitliche Incentive -Fonds wurde erhalten: %D "
+"Kreditpunkte"
