@@ -20,9 +20,9 @@ function execute(sender, commandName)
 end
 
 function getDescription()
-    return "启用调试面板"%_t
+    return "Enable Debug Panel"%_t
 end
 
 function getHelp()
-    return "打开调试面板: /debug"%_t
+    return "Open the debug panel: /debug"%_t
 end

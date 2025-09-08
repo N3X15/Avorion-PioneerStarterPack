@@ -20,9 +20,9 @@ function onPlayerLogIn(playerIndex)
     local player = Player(playerIndex)
     payUpdate(player)
 
-    Server():broadcastChatMessage("Server", ChatMessageType.ServerInfo, "%s 结束了他短暂的假期，开始了新的开拓之旅。"%_t, player.name)
-    Server():broadcastChatMessage("Server", ChatMessageType.ServerInfo, "%s 已接管舰队指挥权限，欢迎指挥官接管舰队。"%_t, player.name)
-    Server():broadcastChatMessage("Server", ChatMessageType.ServerInfo, "%s --舰队已整装完毕--，--等待指挥官命令--。"%_t, player.name)
+    Server():broadcastChatMessage("Server", ChatMessageType.ServerInfo, "%s ended his short vacation and started a new pioneering journey."%_t, player.name)
+    Server():broadcastChatMessage("Server", ChatMessageType.ServerInfo, "%s has taken over the command of the fleet. Commander, welcome to take over the fleet."%_t, player.name)
+    Server():broadcastChatMessage("Server", ChatMessageType.ServerInfo, "%s --The fleet is ready--, --awaiting the commander's orders--."%_t, player.name)
 
     if onServer() then
         checkPlayerValue(player)
@@ -53,12 +53,12 @@ function updatePlayerValue(player, reg, log, day)
         player:setValue("playday", d)
         player:setValue("onlinetime", 0)
         player:setValue("pointsnumber", 0)
-        -- print("updatePlayerValue:检测到" .. player.name .. "登入信息"%_t)
-        print("updatePlayerValue:检测到${name}登入信息"%_t % {name=player.name})
+        -- print("updatePlayerValue:检测到" .. player.name .. "Login information"%_t)
+        print("updatePlayerValue: ${name} login information detected"%_t % {name=player.name})
         payday(player)
     end
-    player:sendChatMessage("系统", ChatMessageType.Information, "欢迎开拓者"%_t)
-    player:sendChatMessage("系统", ChatMessageType.Information, "祝君好运"%_t)
+    player:sendChatMessage("系统", ChatMessageType.Information, "Welcome Pioneers"%_t)
+    player:sendChatMessage("系统", ChatMessageType.Information, "Good luck"%_t)
 end
 
 function regPlayerValue(player)
@@ -81,8 +81,8 @@ function payUpdate(player)
         local tur = generator:generate(260, 260, 0, Rarity(1), WeaponType.MiningLaser, Material(1))
 
         local mail = Mail()
-        mail.header = "您好新晋开拓者"%_t --标题
-        mail.sender = "星河开拓联盟"%_t --名字
+        mail.header = "Hello New Pioneers"%_t --标题
+        mail.sender = "Galaxy Development Alliance"%_t --名字
         mail.text = "欢迎加入银河开拓之旅:\n\n星联将为每一位新晋开拓者发放新人福利\n感谢您加入宇宙开拓，为支持您的初期发展，特此奉上启动资源包\n祝君武运昌隆"%_t
         mail.money = 50000
         mail:setResources(5000)

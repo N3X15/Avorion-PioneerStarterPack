@@ -101,7 +101,7 @@ function settleXsotanSwarmEvent(state)
         -- | 安定值的最低限制为 600 ,也就是说，即使是失败，也不会低于 200,随着不断地胜利,安定值最终会抵达 2400 的上限
         -- | 但是 2400 并不会提供 48H(4day) 的冷却时间， 而是在 36H(3day) 后抵达上限
         stableValue = 200
-        print("server: 正在初始化安定值 | ${v}"%_t % {v=stableValue})
+        print("server: Initializing stability value | ${v}"%_t % {v=stableValue})
     end
 
     if state == "victory" then
@@ -118,20 +118,20 @@ function settleXsotanSwarmEvent(state)
     end
     local cds = 60
     if stableValue < 600 then
-        server:broadcastChatMessage("", ChatMessageType.Information, "裂隙研究所: 屏障内的空间仍然不稳定,就如同一个千疮百孔的篓子,我们担心它们会很快卷土重来..."%_T)
+        server:broadcastChatMessage("", ChatMessageType.Information, "Rift Research Institute: The space within the barrier remains unstable, like a broken basket. We fear they will soon return..."%_T)
         cds = 30
     end
     if stableValue < 1200 and stableValue >= 600 then
-        server:broadcastChatMessage("", ChatMessageType.Information, "裂隙研究所: 屏障内一部分空间已经趋于平静,我们应该可以享受片刻的安宁了."%_T)
+        server:broadcastChatMessage("", ChatMessageType.Information, "Rift Research Institute: A portion of the barrier has calmed down. We should be able to enjoy a moment of peace."%_T)
         cds = 40
     end
     if stableValue < 1800 and stableValue >= 1200 then
-        server:broadcastChatMessage("", ChatMessageType.Information, "裂隙研究所: 屏障内大部分空间已经彻底平静,一段时间内索坦都不再可能袭来了."%_T)
+        server:broadcastChatMessage("", ChatMessageType.Information, "Rift Research Institute: Most of the space within the barrier has become completely peaceful, and a Xsotan attack is unlikely for some time."%_T)
         cds = 50
     end
     if stableValue >= 1800 then -- 上限
-        server:broadcastChatMessage("", ChatMessageType.Information, "裂隙研究所: 索坦将会在很长一段时间陷入沉寂,但是我们的战争似乎永远也无法结束..."%_T)
-        server:broadcastChatMessage("", ChatMessageType.Information, "裂隙研究所: 但这已经是最好的结果了,不是吗?"%_T)
+        server:broadcastChatMessage("", ChatMessageType.Information, "Rift Research Institute: The Xsotan will be silent for a long time, but our war seems to never end..."%_T)
+        server:broadcastChatMessage("", ChatMessageType.Information, "Rift Research Institute: But this is the best outcome, isn't it?"%_T)
         cds = 60
     end
 
@@ -190,22 +190,22 @@ function chatFirstMessage(action, player)
 
     if action == "create" then
         texts = {
-            "传闻一位名为 %s 的旅行者踏上了属于他自己的星海旅途。"%_t,
-            "远方出现名为 %s 的探险家，他的故事正在这个星空中开始。"%_t,
+            "Rumor has it that a traveler named %s has embarked on a journey across the stars."%_t,
+            "An explorer named %s appears in the distance, and his story begins in this starry sky."%_t,
         }
     end
     if action == "login" then
         texts = {
-            "经过短暂的休整，%s 再次起航。"%_t,
-            "%s 再次启动航程，准备面对新的挑战。"%_t,
-            "%s 结束了他短暂的假期，开始新的探险。"%_t,
+            "After a short rest, %s set sail again."%_t,
+            "%s sets sail again, ready to face new challenges."%_t,
+            "%s ends his short vacation and embarks on a new adventure."%_t,
         }
     end
     if action == "logoff" then
         texts = {
-            "因为日程的结束，%s 关闭了星图。"%_t,
-            "或许是旅程已经抵达一个段落，%s 制定了新的休假日程。"%_t,
-            "%s 似乎不再活跃，最近星空中也鲜有他的传闻，"%_t,
+            "Due to the end of his schedule, %s closed the star map."%_t,
+            "Perhaps because the journey has reached a certain stage, %s has made a new vacation schedule."%_t,
+            "%s seems to be no longer active, and there are few rumors about him in the stars recently."%_t,
         }
     end
     -- getInt是获取随机整数
@@ -249,14 +249,14 @@ function updatePlayerValue(player, reg, log, day)
         player:setValue("logtime",date)
         player:setValue("playday", d)
         -- print("updatePlayerValue:检测到" .. player.name .. "今日首次登录")
-        print("updatePlayerValue:检测到${name}今日首次登录"%_t % {name=player.name})
+        print("updatePlayerValue: Detected that ${name} logged in for the first time today"%_t % {name=player.name})
         -- payday(player)
     else
     end
-    player:sendChatMessage("系统", ChatMessageType.Information, "欢迎来到${servername}"%_t % {servername=server.name})
+    player:sendChatMessage("系统", ChatMessageType.Information, "Welcome to ${servername}"%_t % {servername=server.name})
     -- player:sendChatMessage("系统", ChatMessageType.Information, "您的注册日期为：" .. reg)
     -- player:sendChatMessage("系统", ChatMessageType.Information, "您的游戏天数为：" .. d)
-    player:sendChatMessage("系统", ChatMessageType.Information, "祝君武运昌隆"%_t)
+    player:sendChatMessage("系统", ChatMessageType.Information, "Good hunting"%_t)
 end
 
 function regPlayerValue(player)
@@ -266,7 +266,7 @@ function regPlayerValue(player)
     if not reg then
         -- print("regPlayerValue:正在注册 " .. player.name .. " 注册账号日期")
         player:setValue("regtime",date)
-        player:sendChatMessage("系统", ChatMessageType.Information, "成功注册新玩家数据。您的注册日期为：${date}"%_t % {date=date})
+        player:sendChatMessage("系统", ChatMessageType.Information, "Successfully registered new player data. Your registration date is: ${date}"%_t % {date=date})
     end
     if not log then
         -- print("regPlayerValue:正在注册 " .. player.name .. " 最后登录日期")
@@ -302,8 +302,8 @@ if onServer() then
     local server = Server()
     if not updates then
         local mail = Mail()
-        mail.header = "欢迎来到${servername}"%_t % {servername=server.name} --标题
-        mail.sender = "服务器管理员"%_t --Server administrator (backtranslated)
+        mail.header = "Welcome to ${servername}"%_t % {servername=server.name} --标题
+        mail.sender = "Server Administrator"%_t --Server administrator (backtranslated)
         mail.text = "你好，新冒险家！\n\n为了确保本服务器所有玩家都能享受愉快的游戏体验，请遵守MOTD中规定的规则。\n\n如有任何疑问或需要帮助，请加入服务器的Discord频道。\n\n祝你好运！"%_t
         mail.money = 520
         mail:setResources(95000, 45000, 648)
@@ -323,7 +323,7 @@ end
 --     local updates = player:getValue("only_newPlayer")
 --     if not updates then
 --         local mail = Mail()
---         mail.header = "欢迎来到繁星启航服务器"%_T --标题
+--         mail.header = "Welcome to the Starry Sailing Server"%_T --标题
 --         mail.sender = "繁星服务器 管理员" --名字
 --         mail.text = "新来的冒险家您好:\n\n"
 --         .."为了保证所有的冒险家的游玩体验请您务必阅读并遵守以下规则:\n"
