@@ -21,14 +21,14 @@ In addition, new players are given a start pack currently consisting of:
 
 ## Current Language Support
 
-| Language              | Code | Type  | Maintainer(s)                                                                |
-| --------------------- | ---- | ----- | ---------------------------------------------------------------------------- |
-| Chinese (Simplified)  | `zh` | 🧑    | [丢雷楼某](https://steamcommunity.com/profiles/76561198874738920) (Original) |
-| English               | `en` | 🤖+🧑 | Google Translate + N3X15                                                     |
-| German                | `de` | 🤖    | Google Translate                                                             |
-| Japanese              | `ja` | 🤖    | Google Translate                                                             |
-| Portugese (Brazilian) | `pt` | 🤖    | Google Translate                                                             |
-| Russian               | `ru` | 🤖    | Google Translate                                                             |
+| Language              | Code | Type  | Maintainer(s)                                                                       |
+| --------------------- | ---- | ----- | ----------------------------------------------------------------------------------- |
+| Chinese (Simplified)  | `zh` | 🧑    | [丢雷楼某](https://steamcommunity.com/profiles/76561198874738920) (Mostly original) |
+| English               | `en` | 🤖+🧑 | Google Translate + N3X15                                                            |
+| German                | `de` | 🤖    | Google Translate                                                                    |
+| Japanese              | `ja` | 🤖    | Google Translate                                                                    |
+| Portugese (Brazilian) | `pt` | 🤖    | Google Translate                                                                    |
+| Russian               | `ru` | 🤖    | Google Translate                                                                    |
 
 **Pull Requests are welcome!**
 
