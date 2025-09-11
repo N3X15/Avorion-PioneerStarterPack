@@ -16,22 +16,22 @@ msgstr ""
 # ==========
 # C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/commands/debug.lua
 # ==========
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/commands/debug.lua:
+#: data/scripts/commands/debug.lua:22
 msgid "Enable Debug Panel"
 msgstr "启用调试面板"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/commands/debug.lua:
-msgid "Open the debug panel: /debug"
-msgstr "打开调试面板: /debug"
+#: data/scripts/commands/debug.lua:26
+msgid "Open the debug panel: ${cmd}"
+msgstr "打开调试面板: ${cmd}"
 
 # ==========
 # C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua
 # ==========
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
-msgid "server: Initializing stability value | ${v}"
-msgstr "server: 正在初始化安定值 | ${v}"
+#: data/scripts/galaxy/old.lua:98
+msgid "server: Initializing stability value | ${value}"
+msgstr "server: 正在初始化安定值 | ${value}"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+#: data/scripts/galaxy/old.lua:115
 msgid ""
 "Rift Research Institute: The space within the barrier remains unstable, like "
 "a broken basket. We fear they will soon return..."
@@ -39,20 +39,20 @@ msgstr ""
 "裂隙研究所: 屏障内的空间仍然不稳定,就如同一个千疮百孔的篓子,我们担心它们会很"
 "快卷土重来..."
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+#: data/scripts/galaxy/old.lua:119
 msgid ""
 "Rift Research Institute: A portion of the barrier has calmed down. We should "
 "be able to enjoy a moment of peace."
 msgstr "裂隙研究所: 屏障内一部分空间已经趋于平静,我们应该可以享受片刻的安宁了."
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+#: data/scripts/galaxy/old.lua:123
 msgid ""
 "Rift Research Institute: Most of the space within the barrier has become "
 "completely peaceful, and a Xsotan attack is unlikely for some time."
 msgstr ""
 "裂隙研究所: 屏障内大部分空间已经彻底平静,一段时间内索坦都不再可能袭来了."
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+#: data/scripts/galaxy/old.lua:127
 msgid ""
 "Rift Research Institute: The Xsotan will be silent for a long time, but our "
 "war seems to never end..."
@@ -60,73 +60,73 @@ msgstr ""
 "裂隙研究所: 索坦将会在很长一段时间陷入沉寂,但是我们的战争似乎永远也无法结"
 "束..."
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+#: data/scripts/galaxy/old.lua:128
 msgid "Rift Research Institute: But this is the best outcome, isn't it?"
 msgstr "裂隙研究所: 但这已经是最好的结果了,不是吗?"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+#: data/scripts/galaxy/old.lua:187
 msgid ""
-"Rumor has it that a traveler named %s has embarked on a journey across the "
-"stars."
-msgstr "传闻一位名为 %s 的旅行者踏上了属于他自己的星海旅途。"
+"Rumor has it that a traveler named ${player} has embarked on a journey "
+"across the stars."
+msgstr "传闻一位名为 ${player} 的旅行者踏上了属于他自己的星海旅途。"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+#: data/scripts/galaxy/old.lua:188
 msgid ""
-"An explorer named %s appears in the distance, and his story begins in this "
-"starry sky."
-msgstr "远方出现名为 %s 的探险家，他的故事正在这个星空中开始。"
+"An explorer named ${player} appears in the distance, and his story begins in "
+"this starry sky."
+msgstr "远方出现名为 ${player} 的探险家，他的故事正在这个星空中开始。"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
-msgid "After a short rest, %s set sail again."
-msgstr "经过短暂的休整，%s 再次起航。"
+#: data/scripts/galaxy/old.lua:193
+msgid "After a short rest, ${player} set sail again."
+msgstr "经过短暂的休整，${player} 再次起航。"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
-msgid "%s sets sail again, ready to face new challenges."
-msgstr "%s 再次启动航程，准备面对新的挑战。"
+#: data/scripts/galaxy/old.lua:194
+msgid "${player} sets sail again, ready to face new challenges."
+msgstr "${player} 再次启动航程，准备面对新的挑战。"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
-msgid "%s ends his short vacation and embarks on a new adventure."
-msgstr "%s 结束了他短暂的假期，开始新的探险。"
+#: data/scripts/galaxy/old.lua:195
+msgid "${player} ends his short vacation and embarks on a new adventure."
+msgstr "${player} 结束了他短暂的假期，开始新的探险。"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
-msgid "Due to the end of his schedule, %s closed the star map."
-msgstr "因为日程的结束，%s 关闭了星图。"
+#: data/scripts/galaxy/old.lua:200
+msgid "Due to the end of his schedule, ${player} closed the star map."
+msgstr "因为日程的结束，${player} 关闭了星图。"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+#: data/scripts/galaxy/old.lua:201
 msgid ""
-"Perhaps because the journey has reached a certain stage, %s has made a new "
-"vacation schedule."
-msgstr "或许是旅程已经抵达一个段落，%s 制定了新的休假日程。"
+"Perhaps because the journey has reached a certain stage, ${player} has made "
+"a new vacation schedule."
+msgstr "或许是旅程已经抵达一个段落，${player} 制定了新的休假日程。"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+#: data/scripts/galaxy/old.lua:202
 msgid ""
-"%s seems to be no longer active, and there are few rumors about him in the "
-"stars recently."
-msgstr "%s 似乎不再活跃，最近星空中也鲜有他的传闻，"
+"${player} seems to be no longer active, and there are few rumors about him "
+"in the stars recently."
+msgstr "${player} 似乎不再活跃，最近星空中也鲜有他的传闻，"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+#: data/scripts/galaxy/old.lua:246
 msgid ""
 "updatePlayerValue: Detected that ${name} logged in for the first time today"
 msgstr "updatePlayerValue:检测到${name}今日首次登录"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+#: data/scripts/galaxy/old.lua:250 data/scripts/galaxy/old.lua:299
 msgid "Welcome to ${servername}"
 msgstr "欢迎来到${servername}"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+#: data/scripts/galaxy/old.lua:253
 msgid "Good hunting"
 msgstr "祝君武运昌隆"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+#: data/scripts/galaxy/old.lua:263
 msgid ""
 "Successfully registered new player data. Your registration date is: ${date}"
 msgstr "成功注册新玩家数据。您的注册日期为：${date}"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+#: data/scripts/galaxy/old.lua:300
 msgid "Server Administrator"
 msgstr "服务器管理员"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
+#: data/scripts/galaxy/old.lua:301
 msgid ""
 "Hello, new adventurer!\n"
 "\n"
@@ -146,52 +146,43 @@ msgstr ""
 "\n"
 "祝你好运！"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua:
-msgid "Welcome to the Starry Sailing Server"
-msgstr "欢迎来到繁星启航服务器"
-
 # ==========
 # C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua
 # ==========
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
-msgid "%s ended his short vacation and started a new pioneering journey."
-msgstr "%s 结束了他短暂的假期，开始了新的开拓之旅。"
+#: data/scripts/galaxy/pic.lua:27
+msgid "${player} ended his short vacation and started a new journey."
+msgstr "${player} 结束了他短暂的假期，开始了新的开拓之旅。"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
+#: data/scripts/galaxy/pic.lua:28
 msgid ""
-"%s has taken over the command of the fleet. Commander, welcome to take over "
-"the fleet."
-msgstr "%s 已接管舰队指挥权限，欢迎指挥官接管舰队。"
+"${player} has returned. Commander, you are welcome to take over the fleet."
+msgstr "${player} 已接管舰队指挥权限，欢迎指挥官接管舰队。"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
-msgid "%s --The fleet is ready--, --awaiting the commander's orders--."
-msgstr "%s --舰队已整装完毕--，--等待指挥官命令--。"
+#: data/scripts/galaxy/pic.lua:29
+msgid "The fleet is ready, awaiting ${player}'s orders."
+msgstr "${player} 舰队已整装完毕，等待指挥官命令。"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
-msgid "Login information"
-msgstr "登入信息"
-
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
+#: data/scripts/galaxy/pic.lua:63
 msgid "updatePlayerValue: ${name} login information detected"
 msgstr "updatePlayerValue:检测到${name}登入信息"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
+#: data/scripts/galaxy/pic.lua:66
 msgid "Welcome Pioneers"
 msgstr "欢迎开拓者"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
+#: data/scripts/galaxy/pic.lua:67
 msgid "Good luck"
 msgstr "祝君好运"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
+#: data/scripts/galaxy/pic.lua:90
 msgid "Hello New Pioneers"
 msgstr "您好新晋开拓者"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
+#: data/scripts/galaxy/pic.lua:91
 msgid "Galaxy Development Alliance"
 msgstr "星河开拓联盟"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/pic.lua:
+#: data/scripts/galaxy/pic.lua:92
 msgid ""
 "Welcome to the galactic exploration journey:\n"
 "\n"
@@ -209,14 +200,23 @@ msgstr ""
 # ==========
 # C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/player/onlinepay.lua
 # ==========
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/player/onlinepay.lua:
+#: data/scripts/player/onlinepay.lua:34
 msgid "Hello Pioneer"
 msgstr "您好开拓者"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/player/onlinepay.lua:
+#: data/scripts/player/onlinepay.lua:35
 msgid "Star Alliance Incentive Fund Committee"
 msgstr "星联激励基金委员会"
 
-#: C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/player/onlinepay.lua:
-msgid "20min active time incentive fund has been received: %d credit points"
-msgstr "20min活跃时长激励基金已到账：%d 信用点"
+# Machine-translated
+#: data/scripts/player/onlinepay.lua:36
+#, fuzzy
+msgid ""
+"Your Active Time Incentive Fund payment has been received: ${amount} credits"
+msgstr "您的活跃时间激励基金付款已收到：${amount} 积分"
+
+#~ msgid "Welcome to the Starry Sailing Server"
+#~ msgstr "欢迎来到繁星启航服务器"
+
+#~ msgid "Login information"
+#~ msgstr "登入信息"

@@ -34,7 +34,7 @@ function payUpdate(pay)
     local mail = Mail()
     mail.header = "Hello Pioneer"%_t
     mail.sender = "Star Alliance Incentive Fund Committee"%_t
-    mail.text = string.format("20min active time incentive fund has been received: %d credit points"%_t, pay)
+    mail.text = ("Your Active Time Incentive Fund payment has been received: ${amount} credits"%_t) % { amount = pay }
 
     mail.money = math.floor(tonumber(pay) or 0)
     mail.id = "online_"

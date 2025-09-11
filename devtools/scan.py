@@ -4,23 +4,34 @@ from typing import Generator, Set
 
 from polib import POEntry, pofile
 
-REG_T_MESSAGE_STANDARD = re.compile(r'(?:"([^"]+)"|\'([^\']+)\')\w*%\w*_[tT]')
-
+REG_LUA_COMMENT = re.compile(r"--.*$",flags=re.MULTILINE)
+REG_LUA_MLCOMMENT = re.compile(r"--\[(=*)\[(.|\n)*?\]\1\]", flags=re.MULTILINE)
+REG_T_MESSAGE_STANDARD = re.compile(r'\-\-.+$')
+REG_T_MESSAGE_STANDARD = re.compile(r'"((?:[^"\\]|\\.)*)"\w*%\w*_[tT]')
+REG_T_MESSAGE_CONTEXT = re.compile(r"\/\*(\*(?!\/)|[^*])*\*\/")
 
 def get_msgs(file: Path) -> Generator[POEntry, None, None]:
-    with file.open("r", encoding="utf-8") as f:
-        for i, ol in enumerate(f):
-            l = ol.strip("\r\n")
-            # print(i,l)
-            if (m := REG_T_MESSAGE_STANDARD.search(l)) is not None:
-                msg = m.group(1)
-                # print(i, repr(msg), repr(l))
-                yield POEntry(
-                    occurrences=[(f"{file.as_posix()}", i)],
-                    tcomment="",
-                    msgid=msg.replace("\\n", "\n"),
-                )
-                first = False
+    code = file.read_text(encoding='utf-8')
+    code = REG_LUA_MLCOMMENT.sub('',code)
+    code = REG_LUA_COMMENT.sub('',code)
+    for i, ol in enumerate(code.splitlines()):
+        l = ol.strip("\r\n")
+        # print(i,l)
+
+        for m in REG_T_MESSAGE_STANDARD.finditer(l):
+            # print(repr(m))
+            msg = m.group(1)
+            msgctxt = None
+            if (cm := REG_T_MESSAGE_CONTEXT.search(msg)) is not None:
+                msgctxt = cm.group(1).replace("\\n", "\n")
+                msg=REG_T_MESSAGE_CONTEXT.sub('',msg)
+            # print(i, repr(msg), repr(l))
+            yield POEntry(
+                occurrences=[(f"{file.as_posix()}", i)],
+                tcomment="",
+                msgid=msg.replace("\\n", "\n"),
+                msgctxt=msgctxt,
+            )
 
 
 def preload_stock(stock_potfile: Path) -> Set[str]:
@@ -39,8 +50,8 @@ def main():
         args.avorion_path / "data" / "localization" / "template.pot"
     )
     pot = pofile(Path("data") / "localization" / "template.pot")
-    extant: Set[POEntry] = set([poe for poe in pot])
-    found: Set[POEntry] = set()
+    extant: Set[str] = set([poe.msgid for poe in pot])
+    found: Set[str] = set()
     pot.clear()
     for luaf in Path("data").rglob("*.lua"):
         print(luaf)
@@ -56,9 +67,15 @@ def main():
                 pot.append(e)
             else:
                 fe.occurrences.append(e.occurrences[0])
-            found.add(e)
-    # obsolete = extant - found
-    # print(f'{obsolete=}')
+            found.add(e.msgid)
+    obsolete = extant - found
+    new = found - extant
+    if len(obsolete) > 0:
+        print(f"Could not find:")
+        [print(f" - {e!r}") for e in obsolete]
+    if len(new) > 0:
+        print(f"New entries:")
+        [print(f" + {e!r}") for e in new]
     pot.save(Path("data") / "localization" / "template.pot")
 
 

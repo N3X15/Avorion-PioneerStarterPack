@@ -101,7 +101,7 @@ function settleXsotanSwarmEvent(state)
         -- | 安定值的最低限制为 600 ,也就是说，即使是失败，也不会低于 200,随着不断地胜利,安定值最终会抵达 2400 的上限
         -- | 但是 2400 并不会提供 48H(4day) 的冷却时间， 而是在 36H(3day) 后抵达上限
         stableValue = 200
-        print("server: Initializing stability value | ${v}"%_t % {v=stableValue})
+        print("server: Initializing stability value | ${value}"%_t % {value=stableValue})
     end
 
     if state == "victory" then
@@ -190,28 +190,28 @@ function chatFirstMessage(action, player)
 
     if action == "create" then
         texts = {
-            "Rumor has it that a traveler named %s has embarked on a journey across the stars."%_t,
-            "An explorer named %s appears in the distance, and his story begins in this starry sky."%_t,
+            "Rumor has it that a traveler named ${player} has embarked on a journey across the stars."%_t,
+            "An explorer named ${player} appears in the distance, and his story begins in this starry sky."%_t,
         }
     end
     if action == "login" then
         texts = {
-            "After a short rest, %s set sail again."%_t,
-            "%s sets sail again, ready to face new challenges."%_t,
-            "%s ends his short vacation and embarks on a new adventure."%_t,
+            "After a short rest, ${player} set sail again."%_t,
+            "${player} sets sail again, ready to face new challenges."%_t,
+            "${player} ends his short vacation and embarks on a new adventure."%_t,
         }
     end
     if action == "logoff" then
         texts = {
-            "Due to the end of his schedule, %s closed the star map."%_t,
-            "Perhaps because the journey has reached a certain stage, %s has made a new vacation schedule."%_t,
-            "%s seems to be no longer active, and there are few rumors about him in the stars recently."%_t,
+            "Due to the end of his schedule, ${player} closed the star map."%_t,
+            "Perhaps because the journey has reached a certain stage, ${player} has made a new vacation schedule."%_t,
+            "${player} seems to be no longer active, and there are few rumors about him in the stars recently."%_t,
         }
     end
     -- getInt是获取随机整数
-     local sum = #texts  local rd = getInt(1,sum)    local bt = texts[rd]
+    local sum = #texts  local rd = getInt(1,sum)    local bt = texts[rd]
 
-    Server():broadcastChatMessage("Server", ChatMessageType.ServerInfo, bt, player.name)
+    Server():broadcastChatMessage("Server", ChatMessageType.ServerInfo, bt % {player=player.name})
 
     -- if debug then
     --     print("==============================")

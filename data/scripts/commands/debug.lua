@@ -24,5 +24,5 @@ function getDescription()
 end
 
 function getHelp()
-    return "Open the debug panel: /debug"%_t
+    return ("Open the debug panel: ${cmd}"%_t)%{cmd="/debug"}
 end

@@ -20,9 +20,16 @@ function onPlayerLogIn(playerIndex)
     local player = Player(playerIndex)
     payUpdate(player)
 
-    Server():broadcastChatMessage("Server", ChatMessageType.ServerInfo, "%s ended his short vacation and started a new pioneering journey."%_t, player.name)
-    Server():broadcastChatMessage("Server", ChatMessageType.ServerInfo, "%s has taken over the command of the fleet. Commander, welcome to take over the fleet."%_t, player.name)
-    Server():broadcastChatMessage("Server", ChatMessageType.ServerInfo, "%s --The fleet is ready--, --awaiting the commander's orders--."%_t, player.name)
+    -- This is too damn verbose for us. - N3X
+    -- Server():broadcastChatMessage("Server", ChatMessageType.ServerInfo, "${player} ended his short vacation and started a new pioneering journey."%_t, player.name)
+    -- Server():broadcastChatMessage("Server", ChatMessageType.ServerInfo, "${player} has taken over the command of the fleet. Commander, welcome to take over the fleet."%_t, player.name)
+    -- Server():broadcastChatMessage("Server", ChatMessageType.ServerInfo, "${player} --The fleet is ready--, --awaiting the commander's orders--."%_t, player.name)
+    local possibilities = {
+        "${player} ended his short vacation and started a new journey."%_t,
+        "${player} has returned. Commander, you are welcome to take over the fleet."%_t,
+        "The fleet is ready, awaiting ${player}'s orders."%_t
+    }
+    Server():broadcastChatMessage("Server/* Context: onPlayerLogin */"%_t, ChatMessageType.ServerInfo, possibilities[getInt(1,#possibilities)])
 
     if onServer() then
         checkPlayerValue(player)
