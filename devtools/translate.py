@@ -1,13 +1,15 @@
 import asyncio
 import os
 import re
+import sys
+from pathlib import Path
 from typing import List
+
+import humanize
 from googletrans import Translator
 from googletrans.models import Translated
-from polib import pofile, POFile, POEntry
-from pathlib import Path
+from polib import POFile, pofile
 from rich.console import Console
-import humanize
 
 MSGIDS: List[str]
 
@@ -22,16 +24,16 @@ def _fix_luarepl(m: re.Match) -> str:
 
 
 async def translate(
-    console: Console, translator: Translator, pot:POFile, filename: Path, lang: str
+    console: Console, translator: Translator, pot: POFile, filename: Path, lang: str
 ) -> None:
     with console.status(f"Translating {filename} (en -> {lang})..."):
-        po = pofile(filename)
+        po = pofile(filename, wrapwidth=sys.maxsize)
         po.merge(pot)
         txres: Translated
         for txres in await translator.translate(MSGIDS, dest=lang, src="en"):
             e = po.find(txres.origin)
             if e is None:
-                console.log(f'W: Could not find msgid={txres.origin!r}.')
+                console.log(f"W: Could not find msgid={txres.origin!r}.")
                 continue
             msgstr: str = txres.text
             msgstr = REG_STRING_REPLACEMENTS.sub("%s", msgstr)
@@ -44,11 +46,11 @@ async def translate(
 
 async def do_localizations(console: Console) -> None:
     global MSGIDS
-    pot=pofile(Path('data')/'localization'/'template.pot')
+    pot = pofile(Path("data") / "localization" / "template.pot")
     MSGIDS = [e.msgid for e in pot]
     async with Translator() as translator:
         await translate(
-            console, translator, pot,Path("data") / "localization" / "deutsch.po", "de"
+            console, translator, pot, Path("data") / "localization" / "deutsch.po", "de"
         )
         await translate(
             console, translator, pot, Path("data") / "localization" / "fr.po", "fr"

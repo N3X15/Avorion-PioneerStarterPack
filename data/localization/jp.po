@@ -26,54 +26,32 @@ msgid "server: Initializing stability value | ${value}"
 msgstr "サーバー：安定性値の初期化| ${value}"
 
 #: data/scripts/galaxy/old.lua:115
-msgid ""
-"Rift Research Institute: The space within the barrier remains unstable, "
-"like a broken basket. We fear they will soon return..."
-msgstr ""
-"Rift Research Institute：バリア内のスペースは、壊れたバスケットのように不安"
-"定なままです。私たちは彼らがすぐに戻ることを恐れています..."
+msgid "Rift Research Institute: The space within the barrier remains unstable, like a broken basket. We fear they will soon return..."
+msgstr "Rift Research Institute：バリア内のスペースは、壊れたバスケットのように不安定なままです。私たちは彼らがすぐに戻ることを恐れています..."
 
 #: data/scripts/galaxy/old.lua:119
-msgid ""
-"Rift Research Institute: A portion of the barrier has calmed down. We "
-"should be able to enjoy a moment of peace."
-msgstr ""
-"Rift Research Institute：障壁の一部が落ち着きました。私たちは平和の瞬間を楽"
-"しむことができるはずです。"
+msgid "Rift Research Institute: A portion of the barrier has calmed down. We should be able to enjoy a moment of peace."
+msgstr "Rift Research Institute：障壁の一部が落ち着きました。私たちは平和の瞬間を楽しむことができるはずです。"
 
 #: data/scripts/galaxy/old.lua:123
-msgid ""
-"Rift Research Institute: Most of the space within the barrier has become "
-"completely peaceful, and a Xsotan attack is unlikely for some time."
-msgstr ""
-"Rift Research Institute：障壁内のスペースのほとんどは完全に平和になり、"
-"Xsotan攻撃はしばらくの間ありそうにありません。"
+msgid "Rift Research Institute: Most of the space within the barrier has become completely peaceful, and a Xsotan attack is unlikely for some time."
+msgstr "Rift Research Institute：障壁内のスペースのほとんどは完全に平和になり、Xsotan攻撃はしばらくの間ありそうにありません。"
 
 #: data/scripts/galaxy/old.lua:127
-msgid ""
-"Rift Research Institute: The Xsotan will be silent for a long time, but our "
-"war seems to never end..."
-msgstr ""
-"Rift Research Institute：Xsotanは長い間沈黙しますが、私たちの戦争は決して終"
-"わらないようです..."
+msgid "Rift Research Institute: The Xsotan will be silent for a long time, but our war seems to never end..."
+msgstr "Rift Research Institute：Xsotanは長い間沈黙しますが、私たちの戦争は決して終わらないようです..."
 
 #: data/scripts/galaxy/old.lua:128
 msgid "Rift Research Institute: But this is the best outcome, isn't it?"
 msgstr "Rift Research Institute：しかし、これは最良の結果ですね。"
 
 #: data/scripts/galaxy/old.lua:187
-msgid ""
-"Rumor has it that a traveler named ${player} has embarked on a journey "
-"across the stars."
+msgid "Rumor has it that a traveler named ${player} has embarked on a journey across the stars."
 msgstr "噂によると、${player}という名前の旅行者が星を横切る旅に着手しました。"
 
 #: data/scripts/galaxy/old.lua:188
-msgid ""
-"An explorer named ${player} appears in the distance, and his story begins "
-"in this starry sky."
-msgstr ""
-"${player}という名前のエクスプローラーが遠くに登場し、彼の物語はこの星空で始"
-"まります。"
+msgid "An explorer named ${player} appears in the distance, and his story begins in this starry sky."
+msgstr "${player}という名前のエクスプローラーが遠くに登場し、彼の物語はこの星空で始まります。"
 
 #: data/scripts/galaxy/old.lua:193
 msgid "After a short rest, ${player} set sail again."
@@ -92,25 +70,16 @@ msgid "Due to the end of his schedule, ${player} closed the star map."
 msgstr "彼のスケジュールが終了したため、${player}はスターマップを閉じました。"
 
 #: data/scripts/galaxy/old.lua:201
-msgid ""
-"Perhaps because the journey has reached a certain stage, ${player} has made "
-"a new vacation schedule."
-msgstr ""
-"おそらく、旅が特定のステージに達したため、${player}は新しい休暇スケジュール"
-"を作成しました。"
+msgid "Perhaps because the journey has reached a certain stage, ${player} has made a new vacation schedule."
+msgstr "おそらく、旅が特定のステージに達したため、${player}は新しい休暇スケジュールを作成しました。"
 
 #: data/scripts/galaxy/old.lua:202
-msgid ""
-"${player} seems to be no longer active, and there are few rumors about him "
-"in the stars recently."
-msgstr ""
-"${player}はもはやアクティブではないようで、最近星に彼についての噂はほとんど"
-"ありません。"
+msgid "${player} seems to be no longer active, and there are few rumors about him in the stars recently."
+msgstr "${player}はもはやアクティブではないようで、最近星に彼についての噂はほとんどありません。"
 
 #: data/scripts/galaxy/old.lua:246
-msgid ""
-"updatePlayerValue: Detected that ${name} logged in for the first time today"
-msgstr "UpdatePlayerValue：今日初めて${name}がログインしたことを検出しました"
+msgid "updatePlayerValue: Detected that ${name} logged in for the first time today"
+msgstr "updatePlayerValue：今日初めて${name}がログインしたことを検出しました"
 
 #: data/scripts/galaxy/old.lua:250 data/scripts/galaxy/old.lua:299
 msgid "Welcome to ${servername}"
@@ -121,10 +90,8 @@ msgid "Good hunting"
 msgstr "良い狩猟"
 
 #: data/scripts/galaxy/old.lua:263
-msgid ""
-"Successfully registered new player data. Your registration date is: ${date}"
-msgstr ""
-"新しいプレーヤーデータを正常に登録しました。登録日は次のとおりです。${date}"
+msgid "Successfully registered new player data. Your registration date is: ${date}"
+msgstr "新しいプレーヤーデータを正常に登録しました。登録日は次のとおりです。${date}"
 
 #: data/scripts/galaxy/old.lua:300
 msgid "Server Administrator"
@@ -134,21 +101,17 @@ msgstr "サーバー管理者"
 msgid ""
 "Hello, new adventurer!\n"
 "\n"
-"To ensure a pleasant gaming experience for all on this server, please "
-"follow the rules as set out in the MOTD.\n"
+"To ensure a pleasant gaming experience for all on this server, please follow the rules as set out in the MOTD.\n"
 "\n"
-"If you have any questions or need any help, please join the server's "
-"Discord channel.\n"
+"If you have any questions or need any help, please join the server's Discord channel.\n"
 "\n"
 "Best of luck!"
 msgstr ""
 "こんにちは、新しい冒険家！\n"
 "\n"
-"このサーバー上のすべての人に快適なゲームエクスペリエンスを確保するには、MOTD"
-"に記載されているルールに従ってください。\n"
+"このサーバー上のすべての人に快適なゲームエクスペリエンスを確保するには、MOTDに記載されているルールに従ってください。\n"
 "\n"
-"ご質問がある場合、またはサポートが必要な場合は、サーバーのDiscordチャネルに"
-"参加してください。\n"
+"ご質問がある場合、またはサポートが必要な場合は、サーバーのDiscordチャネルに参加してください。\n"
 "\n"
 "幸運を！"
 
@@ -157,10 +120,8 @@ msgid "${player} ended his short vacation and started a new journey."
 msgstr "${player}は彼の短い休暇を終え、新しい旅を始めました。"
 
 #: data/scripts/galaxy/pic.lua:28
-msgid ""
-"${player} has returned. Commander, you are welcome to take over the fleet."
-msgstr ""
-"${player}が返されました。司令官、あなたは艦隊を引き継ぐことを歓迎します。"
+msgid "${player} has returned. Commander, you are welcome to take over the fleet."
+msgstr "${player}が返されました。司令官、あなたは艦隊を引き継ぐことを歓迎します。"
 
 #: data/scripts/galaxy/pic.lua:29
 msgid "The fleet is ready, awaiting ${player}'s orders."
@@ -191,15 +152,13 @@ msgid ""
 "Welcome to the galactic exploration journey:\n"
 "\n"
 "Star Alliance will provide newcomer benefits to every new pioneer.\n"
-"Thank you for joining the galactic exploration journey. To support your "
-"initial development, we offer you a starter resource pack.\n"
+"Thank you for joining the galactic exploration journey. To support your initial development, we offer you a starter resource pack.\n"
 "Wishing you great military success."
 msgstr ""
 "銀河探査の旅へようこそ：\n"
 "\n"
 "Star Allianceは、すべての新しいパイオニアに新参者の利益を提供します。\n"
-"Galactic Exploration Journeyに参加していただきありがとうございます。最初の開"
-"発をサポートするために、スターターリソースパックを提供します。\n"
+"Galactic Exploration Journeyに参加していただきありがとうございます。最初の開発をサポートするために、スターターリソースパックを提供します。\n"
 "あなたに大きな軍事的成功を願っています。"
 
 #: data/scripts/player/onlinepay.lua:34
@@ -211,8 +170,5 @@ msgid "Star Alliance Incentive Fund Committee"
 msgstr "スターアライアンスインセンティブファンド委員会"
 
 #: data/scripts/player/onlinepay.lua:36
-msgid ""
-"Your Active Time Incentive Fund payment has been received: ${amount} credits"
-msgstr ""
-"あなたのアクティブな時間インセンティブファンドの支払いが受け取られました：$"
-"{amount}クレジット"
+msgid "Your Active Time Incentive Fund payment has been received: ${amount} credits"
+msgstr "あなたのアクティブな時間インセンティブファンドの支払いが受け取られました：${amount}クレジット"

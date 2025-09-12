@@ -27,27 +27,19 @@ msgid "server: Initializing stability value | ${value}"
 msgstr ""
 
 #: data/scripts/galaxy/old.lua:115
-msgid ""
-"Rift Research Institute: The space within the barrier remains unstable, "
-"like a broken basket. We fear they will soon return..."
+msgid "Rift Research Institute: The space within the barrier remains unstable, like a broken basket. We fear they will soon return..."
 msgstr ""
 
 #: data/scripts/galaxy/old.lua:119
-msgid ""
-"Rift Research Institute: A portion of the barrier has calmed down. We "
-"should be able to enjoy a moment of peace."
+msgid "Rift Research Institute: A portion of the barrier has calmed down. We should be able to enjoy a moment of peace."
 msgstr ""
 
 #: data/scripts/galaxy/old.lua:123
-msgid ""
-"Rift Research Institute: Most of the space within the barrier has become "
-"completely peaceful, and a Xsotan attack is unlikely for some time."
+msgid "Rift Research Institute: Most of the space within the barrier has become completely peaceful, and a Xsotan attack is unlikely for some time."
 msgstr ""
 
 #: data/scripts/galaxy/old.lua:127
-msgid ""
-"Rift Research Institute: The Xsotan will be silent for a long time, but our "
-"war seems to never end..."
+msgid "Rift Research Institute: The Xsotan will be silent for a long time, but our war seems to never end..."
 msgstr ""
 
 #: data/scripts/galaxy/old.lua:128
@@ -55,15 +47,11 @@ msgid "Rift Research Institute: But this is the best outcome, isn't it?"
 msgstr ""
 
 #: data/scripts/galaxy/old.lua:187
-msgid ""
-"Rumor has it that a traveler named ${player} has embarked on a journey "
-"across the stars."
+msgid "Rumor has it that a traveler named ${player} has embarked on a journey across the stars."
 msgstr ""
 
 #: data/scripts/galaxy/old.lua:188
-msgid ""
-"An explorer named ${player} appears in the distance, and his story begins "
-"in this starry sky."
+msgid "An explorer named ${player} appears in the distance, and his story begins in this starry sky."
 msgstr ""
 
 #: data/scripts/galaxy/old.lua:193
@@ -83,20 +71,15 @@ msgid "Due to the end of his schedule, ${player} closed the star map."
 msgstr ""
 
 #: data/scripts/galaxy/old.lua:201
-msgid ""
-"Perhaps because the journey has reached a certain stage, ${player} has made "
-"a new vacation schedule."
+msgid "Perhaps because the journey has reached a certain stage, ${player} has made a new vacation schedule."
 msgstr ""
 
 #: data/scripts/galaxy/old.lua:202
-msgid ""
-"${player} seems to be no longer active, and there are few rumors about him "
-"in the stars recently."
+msgid "${player} seems to be no longer active, and there are few rumors about him in the stars recently."
 msgstr ""
 
 #: data/scripts/galaxy/old.lua:246
-msgid ""
-"updatePlayerValue: Detected that ${name} logged in for the first time today"
+msgid "updatePlayerValue: Detected that ${name} logged in for the first time today"
 msgstr ""
 
 #: data/scripts/galaxy/old.lua:250 data/scripts/galaxy/old.lua:299
@@ -108,8 +91,7 @@ msgid "Good hunting"
 msgstr ""
 
 #: data/scripts/galaxy/old.lua:263
-msgid ""
-"Successfully registered new player data. Your registration date is: ${date}"
+msgid "Successfully registered new player data. Your registration date is: ${date}"
 msgstr ""
 
 #: data/scripts/galaxy/old.lua:300
@@ -120,11 +102,9 @@ msgstr ""
 msgid ""
 "Hello, new adventurer!\n"
 "\n"
-"To ensure a pleasant gaming experience for all on this server, please "
-"follow the rules as set out in the MOTD.\n"
+"To ensure a pleasant gaming experience for all on this server, please follow the rules as set out in the MOTD.\n"
 "\n"
-"If you have any questions or need any help, please join the server's "
-"Discord channel.\n"
+"If you have any questions or need any help, please join the server's Discord channel.\n"
 "\n"
 "Best of luck!"
 msgstr ""
@@ -135,8 +115,7 @@ msgid "${player} ended his short vacation and started a new journey."
 msgstr ""
 
 #: data/scripts/galaxy/pic.lua:28
-msgid ""
-"${player} has returned. Commander, you are welcome to take over the fleet."
+msgid "${player} has returned. Commander, you are welcome to take over the fleet."
 msgstr ""
 
 #: data/scripts/galaxy/pic.lua:29
@@ -168,8 +147,7 @@ msgid ""
 "Welcome to the galactic exploration journey:\n"
 "\n"
 "Star Alliance will provide newcomer benefits to every new pioneer.\n"
-"Thank you for joining the galactic exploration journey. To support your "
-"initial development, we offer you a starter resource pack.\n"
+"Thank you for joining the galactic exploration journey. To support your initial development, we offer you a starter resource pack.\n"
 "Wishing you great military success."
 msgstr ""
 
@@ -183,6 +161,5 @@ msgid "Star Alliance Incentive Fund Committee"
 msgstr ""
 
 #: data/scripts/player/onlinepay.lua:36
-msgid ""
-"Your Active Time Incentive Fund payment has been received: ${amount} credits"
+msgid "Your Active Time Incentive Fund payment has been received: ${amount} credits"
 msgstr ""
