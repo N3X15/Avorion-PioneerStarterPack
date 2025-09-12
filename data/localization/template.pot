@@ -78,27 +78,27 @@ msgstr ""
 msgid "${player} seems to be no longer active, and there are few rumors about him in the stars recently."
 msgstr ""
 
-#: data/scripts/galaxy/old.lua:246
+#: data/scripts/galaxy/old.lua:248
 msgid "updatePlayerValue: Detected that ${name} logged in for the first time today"
 msgstr ""
 
-#: data/scripts/galaxy/old.lua:250 data/scripts/galaxy/old.lua:299
+#: data/scripts/galaxy/old.lua:252 data/scripts/galaxy/old.lua:301
 msgid "Welcome to ${servername}"
 msgstr ""
 
-#: data/scripts/galaxy/old.lua:253
+#: data/scripts/galaxy/old.lua:255
 msgid "Good hunting"
 msgstr ""
 
-#: data/scripts/galaxy/old.lua:263
+#: data/scripts/galaxy/old.lua:265
 msgid "Successfully registered new player data. Your registration date is: ${date}"
 msgstr ""
 
-#: data/scripts/galaxy/old.lua:300
+#: data/scripts/galaxy/old.lua:302
 msgid "Server Administrator"
 msgstr ""
 
-#: data/scripts/galaxy/old.lua:301
+#: data/scripts/galaxy/old.lua:303
 msgid ""
 "Hello, new adventurer!\n"
 "\n"

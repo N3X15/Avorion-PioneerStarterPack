@@ -29,7 +29,7 @@ function onPlayerLogIn(playerIndex)
         "${player} has returned. Commander, you are welcome to take over the fleet."%_t,
         "The fleet is ready, awaiting ${player}'s orders."%_t
     }
-    Server():broadcastChatMessage("Server/* Context: onPlayerLogin */"%_t, ChatMessageType.ServerInfo, possibilities[getInt(1,#possibilities)])
+    Server():broadcastChatMessage("Server/* Context: onPlayerLogin */"%_t, ChatMessageType.ServerInfo, possibilities[getInt(1,#possibilities)] % {player=player.name})
 
     if onServer() then
         checkPlayerValue(player)

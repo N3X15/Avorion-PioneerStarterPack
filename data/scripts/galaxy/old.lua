@@ -209,7 +209,9 @@ function chatFirstMessage(action, player)
         }
     end
     -- getInt是获取随机整数
-    local sum = #texts  local rd = getInt(1,sum)    local bt = texts[rd]
+    local sum = #texts
+    local rd = getInt(1, sum)
+    local bt = texts[rd]
 
     Server():broadcastChatMessage("Server", ChatMessageType.ServerInfo, bt % {player=player.name})
 
