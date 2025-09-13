@@ -12,15 +12,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.7\n"
 
-# ========== data/scripts/commands/debug.lua ==========
-#: data/scripts/commands/debug.lua:22
-msgid "Enable Debug Panel"
-msgstr ""
-
-#: data/scripts/commands/debug.lua:26
-msgid "Open the debug panel: ${cmd}"
-msgstr ""
-
 # ========== data/scripts/galaxy/old.lua ==========
 #: data/scripts/galaxy/old.lua:98
 msgid "server: Initializing stability value | ${value}"

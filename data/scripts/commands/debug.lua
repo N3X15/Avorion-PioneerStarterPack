@@ -1,3 +1,5 @@
+-- This appears to be redundant - N3X
+--[[
 package.path = package.path .. ";data/scripts/lib/?.lua"
 include ("stringutility")
 function execute(sender, commandName)
@@ -26,3 +28,4 @@ end
 function getHelp()
     return ("Open the debug panel: ${cmd}"%_t)%{cmd="/debug"}
 end
+]]--
