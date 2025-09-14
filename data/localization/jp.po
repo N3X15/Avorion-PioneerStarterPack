@@ -13,14 +13,6 @@ msgstr ""
 "X-Generator: Poedit 3.7\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: data/scripts/commands/debug.lua:22
-msgid "Enable Debug Panel"
-msgstr "デバッグパネルを有効にします"
-
-#: data/scripts/commands/debug.lua:26
-msgid "Open the debug panel: ${cmd}"
-msgstr "デバッグパネルを開く：${cmd}"
-
 #: data/scripts/galaxy/old.lua:98
 msgid "server: Initializing stability value | ${value}"
 msgstr "サーバー：安定性値の初期化| ${value}"
@@ -77,27 +69,27 @@ msgstr "おそらく、旅が特定のステージに達したため、${player}
 msgid "${player} seems to be no longer active, and there are few rumors about him in the stars recently."
 msgstr "${player}はもはやアクティブではないようで、最近星に彼についての噂はほとんどありません。"
 
-#: data/scripts/galaxy/old.lua:246
+#: data/scripts/galaxy/old.lua:248
 msgid "updatePlayerValue: Detected that ${name} logged in for the first time today"
 msgstr "updatePlayerValue：今日初めて${name}がログインしたことを検出しました"
 
-#: data/scripts/galaxy/old.lua:250 data/scripts/galaxy/old.lua:299
+#: data/scripts/galaxy/old.lua:252 data/scripts/galaxy/old.lua:301
 msgid "Welcome to ${servername}"
 msgstr "${servername}へようこそ"
 
-#: data/scripts/galaxy/old.lua:253
+#: data/scripts/galaxy/old.lua:255
 msgid "Good hunting"
 msgstr "良い狩猟"
 
-#: data/scripts/galaxy/old.lua:263
+#: data/scripts/galaxy/old.lua:265
 msgid "Successfully registered new player data. Your registration date is: ${date}"
 msgstr "新しいプレーヤーデータを正常に登録しました。登録日は次のとおりです。${date}"
 
-#: data/scripts/galaxy/old.lua:300
+#: data/scripts/galaxy/old.lua:302
 msgid "Server Administrator"
 msgstr "サーバー管理者"
 
-#: data/scripts/galaxy/old.lua:301
+#: data/scripts/galaxy/old.lua:303
 msgid ""
 "Hello, new adventurer!\n"
 "\n"
@@ -172,3 +164,21 @@ msgstr "スターアライアンスインセンティブファンド委員会"
 #: data/scripts/player/onlinepay.lua:36
 msgid "Your Active Time Incentive Fund payment has been received: ${amount} credits"
 msgstr "あなたのアクティブな時間インセンティブファンドの支払いが受け取られました：${amount}クレジット"
+
+#: data/scripts/commands/checkpay.lua:28
+msgid "Your online pay is ${points}×${multiplier}+${offset}, with a maximum of ${max} = ${calculated}."
+msgstr "オンラインペイは${points}×${multiplier}+${offset}で、最大${max} = ${calculated}です。"
+
+#: data/scripts/commands/checkpay.lua:41
+msgid "Display pay values"
+msgstr "支払い値を表示します"
+
+#: data/scripts/commands/checkpay.lua:45
+msgid "Display current pay values: ${cmd}"
+msgstr "現在の給与値を表示：${cmd}"
+
+#~ msgid "Enable Debug Panel"
+#~ msgstr "デバッグパネルを有効にします"
+
+#~ msgid "Open the debug panel: ${cmd}"
+#~ msgstr "デバッグパネルを開く：${cmd}"

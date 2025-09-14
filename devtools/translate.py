@@ -3,7 +3,7 @@ import os
 import re
 import sys
 from pathlib import Path
-from typing import List
+from typing import List, Set
 
 import humanize
 from googletrans import Translator
@@ -13,7 +13,7 @@ from rich.console import Console
 
 MSGIDS: List[str]
 
-
+LANG_DIR = Path("data") / "localization"
 REG_STRING_REPLACEMENTS = re.compile(r"[%％] *[sS]")
 REG_DECIMAL_REPLACEMENTS = re.compile(r"[%％] *[dD]")
 REG_LUA_REPLACEMENTS = re.compile(r"[\$$] *\{ *([^\}]+) *\}")
@@ -24,13 +24,26 @@ def _fix_luarepl(m: re.Match) -> str:
 
 
 async def translate(
-    console: Console, translator: Translator, pot: POFile, filename: Path, lang: str
+    console: Console,
+    translator: Translator,
+    pot: POFile,
+    filename: Path,
+    lang: str,
+    overwrite: bool = False,
 ) -> None:
     with console.status(f"Translating {filename} (en -> {lang})..."):
         po = pofile(filename, wrapwidth=sys.maxsize)
         po.merge(pot)
         txres: Translated
-        for txres in await translator.translate(MSGIDS, dest=lang, src="en"):
+        EXCLUDED_MSGIDS: Set[str] = set(
+            [e.msgid for e in po if e.msgstr != ""] if not overwrite else []
+        )
+        msgids = list(set(MSGIDS) - EXCLUDED_MSGIDS)
+        if len(msgids)==0:
+            return
+        for txres in await translator.translate(
+            msgids, dest=lang, src="en"
+        ):
             e = po.find(txres.origin)
             if e is None:
                 console.log(f"W: Could not find msgid={txres.origin!r}.")
@@ -46,23 +59,56 @@ async def translate(
 
 async def do_localizations(console: Console) -> None:
     global MSGIDS
-    pot = pofile(Path("data") / "localization" / "template.pot")
+    pot = pofile(LANG_DIR / "template.pot")
     MSGIDS = [e.msgid for e in pot]
     async with Translator() as translator:
         await translate(
-            console, translator, pot, Path("data") / "localization" / "deutsch.po", "de"
+            console,
+            translator,
+            pot,
+            filename=LANG_DIR / "deutsch.po",
+            lang="de",
+            overwrite=True,
         )
         await translate(
-            console, translator, pot, Path("data") / "localization" / "fr.po", "fr"
+            console,
+            translator,
+            pot,
+            filename=LANG_DIR / "fr.po",
+            lang="fr",
+            overwrite=True,
         )
         await translate(
-            console, translator, pot, Path("data") / "localization" / "jp.po", "ja"
+            console,
+            translator,
+            pot,
+            filename=LANG_DIR / "jp.po",
+            lang="ja",
+            overwrite=True,
         )
         await translate(
-            console, translator, pot, Path("data") / "localization" / "pt-br.po", "pt"
+            console,
+            translator,
+            pot,
+            filename=LANG_DIR / "pt-br.po",
+            lang="pt",
+            overwrite=True,
         )
         await translate(
-            console, translator, pot, Path("data") / "localization" / "ru.po", "ru"
+            console,
+            translator,
+            pot,
+            filename=LANG_DIR / "ru.po",
+            lang="ru",
+            overwrite=True,
+        )
+        await translate(
+            console,
+            translator,
+            pot,
+            filename=LANG_DIR / "zh.po",
+            lang="zh",
+            overwrite=False,
         )
 
 

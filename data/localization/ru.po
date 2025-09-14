@@ -12,14 +12,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.7\n"
 
-#: data/scripts/commands/debug.lua:22
-msgid "Enable Debug Panel"
-msgstr "Включить панель отладки"
-
-#: data/scripts/commands/debug.lua:26
-msgid "Open the debug panel: ${cmd}"
-msgstr "Откройте панель отладки: ${cmd}"
-
 #: data/scripts/galaxy/old.lua:98
 msgid "server: Initializing stability value | ${value}"
 msgstr "Сервер: инициализация значения стабильности | ${value}"
@@ -76,27 +68,27 @@ msgstr "Возможно, потому что путешествие дости�
 msgid "${player} seems to be no longer active, and there are few rumors about him in the stars recently."
 msgstr "${player}, кажется, больше не активен, и в последнее время в его звездах много слухов о нем."
 
-#: data/scripts/galaxy/old.lua:246
+#: data/scripts/galaxy/old.lua:248
 msgid "updatePlayerValue: Detected that ${name} logged in for the first time today"
 msgstr "UpdatePlayerValue: обнаружил, что ${name} вошел в систему в первый раз сегодня"
 
-#: data/scripts/galaxy/old.lua:250 data/scripts/galaxy/old.lua:299
+#: data/scripts/galaxy/old.lua:252 data/scripts/galaxy/old.lua:301
 msgid "Welcome to ${servername}"
 msgstr "Добро пожаловать в ${servername}"
 
-#: data/scripts/galaxy/old.lua:253
+#: data/scripts/galaxy/old.lua:255
 msgid "Good hunting"
 msgstr "Хорошая охота"
 
-#: data/scripts/galaxy/old.lua:263
+#: data/scripts/galaxy/old.lua:265
 msgid "Successfully registered new player data. Your registration date is: ${date}"
 msgstr "Успешно зарегистрировал новые данные игроков. Ваша дата регистрации: ${date}"
 
-#: data/scripts/galaxy/old.lua:300
+#: data/scripts/galaxy/old.lua:302
 msgid "Server Administrator"
 msgstr "Администратор сервера"
 
-#: data/scripts/galaxy/old.lua:301
+#: data/scripts/galaxy/old.lua:303
 msgid ""
 "Hello, new adventurer!\n"
 "\n"
@@ -171,3 +163,15 @@ msgstr "Комитет по стимулирующим фондам Star Allianc
 #: data/scripts/player/onlinepay.lua:36
 msgid "Your Active Time Incentive Fund payment has been received: ${amount} credits"
 msgstr "Ваша активное время стимулирующего фонда была получена: ${amount} кредиты"
+
+#: data/scripts/commands/checkpay.lua:28
+msgid "Your online pay is ${points}×${multiplier}+${offset}, with a maximum of ${max} = ${calculated}."
+msgstr "Ваша онлайн -оплата ${points}×${multiplier}+${offset}, с максимумом ${max} = ${calculated}."
+
+#: data/scripts/commands/checkpay.lua:41
+msgid "Display pay values"
+msgstr "Отображать значения оплаты"
+
+#: data/scripts/commands/checkpay.lua:45
+msgid "Display current pay values: ${cmd}"
+msgstr "Отображение текущих значений оплаты: ${cmd}"

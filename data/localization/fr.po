@@ -12,14 +12,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.7\n"
 
-#: data/scripts/commands/debug.lua:22
-msgid "Enable Debug Panel"
-msgstr "Activer le panneau de débogage"
-
-#: data/scripts/commands/debug.lua:26
-msgid "Open the debug panel: ${cmd}"
-msgstr "Ouvrez le panneau de débogage: ${cmd}"
-
 #: data/scripts/galaxy/old.lua:98
 msgid "server: Initializing stability value | ${value}"
 msgstr "Serveur: Initialisation de la valeur de stabilité | ${value}"
@@ -76,27 +68,27 @@ msgstr "Peut-être parce que le voyage a atteint une certaine étape, ${player} 
 msgid "${player} seems to be no longer active, and there are few rumors about him in the stars recently."
 msgstr "${player} ne semble plus actif, et il y a peu de rumeurs à son sujet dans les étoiles récemment."
 
-#: data/scripts/galaxy/old.lua:246
+#: data/scripts/galaxy/old.lua:248
 msgid "updatePlayerValue: Detected that ${name} logged in for the first time today"
 msgstr "updatePlayerValue: a détecté que ${name} s'est connecté pour la première fois aujourd'hui"
 
-#: data/scripts/galaxy/old.lua:250 data/scripts/galaxy/old.lua:299
+#: data/scripts/galaxy/old.lua:252 data/scripts/galaxy/old.lua:301
 msgid "Welcome to ${servername}"
 msgstr "Bienvenue sur ${servername}"
 
-#: data/scripts/galaxy/old.lua:253
+#: data/scripts/galaxy/old.lua:255
 msgid "Good hunting"
 msgstr "Bonne chasse"
 
-#: data/scripts/galaxy/old.lua:263
+#: data/scripts/galaxy/old.lua:265
 msgid "Successfully registered new player data. Your registration date is: ${date}"
 msgstr "Enregistré avec succès de nouvelles données de joueur. Votre date d'enregistrement est: ${date}"
 
-#: data/scripts/galaxy/old.lua:300
+#: data/scripts/galaxy/old.lua:302
 msgid "Server Administrator"
 msgstr "Administrateur de serveur"
 
-#: data/scripts/galaxy/old.lua:301
+#: data/scripts/galaxy/old.lua:303
 msgid ""
 "Hello, new adventurer!\n"
 "\n"
@@ -171,3 +163,15 @@ msgstr "Comité des fonds d'incitation Star Alliance"
 #: data/scripts/player/onlinepay.lua:36
 msgid "Your Active Time Incentive Fund payment has been received: ${amount} credits"
 msgstr "Votre paiement de fonds incitatif en temps actif a été reçu: ${amount} crédits"
+
+#: data/scripts/commands/checkpay.lua:28
+msgid "Your online pay is ${points}×${multiplier}+${offset}, with a maximum of ${max} = ${calculated}."
+msgstr "Votre salaire en ligne est ${points}×${multiplier}+${offset}, avec un maximum de ${max} = ${calculated}."
+
+#: data/scripts/commands/checkpay.lua:41
+msgid "Display pay values"
+msgstr "Afficher les valeurs de rémunération"
+
+#: data/scripts/commands/checkpay.lua:45
+msgid "Display current pay values: ${cmd}"
+msgstr "Afficher les valeurs de rémunération actuelles: ${cmd}"

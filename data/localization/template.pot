@@ -12,6 +12,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.7\n"
 
+# ========== data/scripts/commands/checkpay.lua ==========
+#: data/scripts/commands/checkpay.lua:28
+msgid "Your online pay is ${points}×${multiplier}+${offset}, with a maximum of ${max} = ${calculated}."
+msgstr ""
+
+#: data/scripts/commands/checkpay.lua:41
+msgid "Display pay values"
+msgstr ""
+
+#: data/scripts/commands/checkpay.lua:45
+msgid "Display current pay values: ${cmd}"
+msgstr ""
+
 # ========== data/scripts/galaxy/old.lua ==========
 #: data/scripts/galaxy/old.lua:98
 msgid "server: Initializing stability value | ${value}"

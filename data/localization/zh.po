@@ -14,17 +14,6 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 
 # ==========
-# C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/commands/debug.lua
-# ==========
-#: data/scripts/commands/debug.lua:22
-msgid "Enable Debug Panel"
-msgstr "启用调试面板"
-
-#: data/scripts/commands/debug.lua:26
-msgid "Open the debug panel: ${cmd}"
-msgstr "打开调试面板: ${cmd}"
-
-# ==========
 # C:/Users/N3X15/AppData/Roaming/Avorion/mods/PioneerStarterPack/data/scripts/galaxy/old.lua
 # ==========
 #: data/scripts/galaxy/old.lua:98
@@ -32,48 +21,31 @@ msgid "server: Initializing stability value | ${value}"
 msgstr "server: 正在初始化安定值 | ${value}"
 
 #: data/scripts/galaxy/old.lua:115
-msgid ""
-"Rift Research Institute: The space within the barrier remains unstable, like "
-"a broken basket. We fear they will soon return..."
-msgstr ""
-"裂隙研究所: 屏障内的空间仍然不稳定,就如同一个千疮百孔的篓子,我们担心它们会很"
-"快卷土重来..."
+msgid "Rift Research Institute: The space within the barrier remains unstable, like a broken basket. We fear they will soon return..."
+msgstr "裂隙研究所: 屏障内的空间仍然不稳定,就如同一个千疮百孔的篓子,我们担心它们会很快卷土重来..."
 
 #: data/scripts/galaxy/old.lua:119
-msgid ""
-"Rift Research Institute: A portion of the barrier has calmed down. We should "
-"be able to enjoy a moment of peace."
+msgid "Rift Research Institute: A portion of the barrier has calmed down. We should be able to enjoy a moment of peace."
 msgstr "裂隙研究所: 屏障内一部分空间已经趋于平静,我们应该可以享受片刻的安宁了."
 
 #: data/scripts/galaxy/old.lua:123
-msgid ""
-"Rift Research Institute: Most of the space within the barrier has become "
-"completely peaceful, and a Xsotan attack is unlikely for some time."
-msgstr ""
-"裂隙研究所: 屏障内大部分空间已经彻底平静,一段时间内索坦都不再可能袭来了."
+msgid "Rift Research Institute: Most of the space within the barrier has become completely peaceful, and a Xsotan attack is unlikely for some time."
+msgstr "裂隙研究所: 屏障内大部分空间已经彻底平静,一段时间内索坦都不再可能袭来了."
 
 #: data/scripts/galaxy/old.lua:127
-msgid ""
-"Rift Research Institute: The Xsotan will be silent for a long time, but our "
-"war seems to never end..."
-msgstr ""
-"裂隙研究所: 索坦将会在很长一段时间陷入沉寂,但是我们的战争似乎永远也无法结"
-"束..."
+msgid "Rift Research Institute: The Xsotan will be silent for a long time, but our war seems to never end..."
+msgstr "裂隙研究所: 索坦将会在很长一段时间陷入沉寂,但是我们的战争似乎永远也无法结束..."
 
 #: data/scripts/galaxy/old.lua:128
 msgid "Rift Research Institute: But this is the best outcome, isn't it?"
 msgstr "裂隙研究所: 但这已经是最好的结果了,不是吗?"
 
 #: data/scripts/galaxy/old.lua:187
-msgid ""
-"Rumor has it that a traveler named ${player} has embarked on a journey "
-"across the stars."
+msgid "Rumor has it that a traveler named ${player} has embarked on a journey across the stars."
 msgstr "传闻一位名为 ${player} 的旅行者踏上了属于他自己的星海旅途。"
 
 #: data/scripts/galaxy/old.lua:188
-msgid ""
-"An explorer named ${player} appears in the distance, and his story begins in "
-"this starry sky."
+msgid "An explorer named ${player} appears in the distance, and his story begins in this starry sky."
 msgstr "远方出现名为 ${player} 的探险家，他的故事正在这个星空中开始。"
 
 #: data/scripts/galaxy/old.lua:193
@@ -93,48 +65,40 @@ msgid "Due to the end of his schedule, ${player} closed the star map."
 msgstr "因为日程的结束，${player} 关闭了星图。"
 
 #: data/scripts/galaxy/old.lua:201
-msgid ""
-"Perhaps because the journey has reached a certain stage, ${player} has made "
-"a new vacation schedule."
+msgid "Perhaps because the journey has reached a certain stage, ${player} has made a new vacation schedule."
 msgstr "或许是旅程已经抵达一个段落，${player} 制定了新的休假日程。"
 
 #: data/scripts/galaxy/old.lua:202
-msgid ""
-"${player} seems to be no longer active, and there are few rumors about him "
-"in the stars recently."
+msgid "${player} seems to be no longer active, and there are few rumors about him in the stars recently."
 msgstr "${player} 似乎不再活跃，最近星空中也鲜有他的传闻，"
 
-#: data/scripts/galaxy/old.lua:246
-msgid ""
-"updatePlayerValue: Detected that ${name} logged in for the first time today"
+#: data/scripts/galaxy/old.lua:248
+msgid "updatePlayerValue: Detected that ${name} logged in for the first time today"
 msgstr "updatePlayerValue:检测到${name}今日首次登录"
 
-#: data/scripts/galaxy/old.lua:250 data/scripts/galaxy/old.lua:299
+#: data/scripts/galaxy/old.lua:252 data/scripts/galaxy/old.lua:301
 msgid "Welcome to ${servername}"
 msgstr "欢迎来到${servername}"
 
-#: data/scripts/galaxy/old.lua:253
+#: data/scripts/galaxy/old.lua:255
 msgid "Good hunting"
 msgstr "祝君武运昌隆"
 
-#: data/scripts/galaxy/old.lua:263
-msgid ""
-"Successfully registered new player data. Your registration date is: ${date}"
+#: data/scripts/galaxy/old.lua:265
+msgid "Successfully registered new player data. Your registration date is: ${date}"
 msgstr "成功注册新玩家数据。您的注册日期为：${date}"
 
-#: data/scripts/galaxy/old.lua:300
+#: data/scripts/galaxy/old.lua:302
 msgid "Server Administrator"
 msgstr "服务器管理员"
 
-#: data/scripts/galaxy/old.lua:301
+#: data/scripts/galaxy/old.lua:303
 msgid ""
 "Hello, new adventurer!\n"
 "\n"
-"To ensure a pleasant gaming experience for all on this server, please follow "
-"the rules as set out in the MOTD.\n"
+"To ensure a pleasant gaming experience for all on this server, please follow the rules as set out in the MOTD.\n"
 "\n"
-"If you have any questions or need any help, please join the server's Discord "
-"channel.\n"
+"If you have any questions or need any help, please join the server's Discord channel.\n"
 "\n"
 "Best of luck!"
 msgstr ""
@@ -154,8 +118,7 @@ msgid "${player} ended his short vacation and started a new journey."
 msgstr "${player} 结束了他短暂的假期，开始了新的开拓之旅。"
 
 #: data/scripts/galaxy/pic.lua:28
-msgid ""
-"${player} has returned. Commander, you are welcome to take over the fleet."
+msgid "${player} has returned. Commander, you are welcome to take over the fleet."
 msgstr "${player} 已接管舰队指挥权限，欢迎指挥官接管舰队。"
 
 #: data/scripts/galaxy/pic.lua:29
@@ -187,8 +150,7 @@ msgid ""
 "Welcome to the galactic exploration journey:\n"
 "\n"
 "Star Alliance will provide newcomer benefits to every new pioneer.\n"
-"Thank you for joining the galactic exploration journey. To support your "
-"initial development, we offer you a starter resource pack.\n"
+"Thank you for joining the galactic exploration journey. To support your initial development, we offer you a starter resource pack.\n"
 "Wishing you great military success."
 msgstr ""
 "欢迎加入银河开拓之旅:\n"
@@ -211,12 +173,18 @@ msgstr "星联激励基金委员会"
 # Machine-translated
 #: data/scripts/player/onlinepay.lua:36
 #, fuzzy
-msgid ""
-"Your Active Time Incentive Fund payment has been received: ${amount} credits"
+msgid "Your Active Time Incentive Fund payment has been received: ${amount} credits"
 msgstr "您的活跃时间激励基金付款已收到：${amount} 积分"
 
-#~ msgid "Welcome to the Starry Sailing Server"
-#~ msgstr "欢迎来到繁星启航服务器"
+#: data/scripts/commands/checkpay.lua:28
+msgid "Your online pay is ${points}×${multiplier}+${offset}, with a maximum of ${max} = ${calculated}."
+msgstr "您的在线付款是${points}×${multiplier}+${offset}，最多为${max} = ${calculated}。"
 
-#~ msgid "Login information"
-#~ msgstr "登入信息"
+#: data/scripts/commands/checkpay.lua:41
+msgid "Display pay values"
+msgstr "显示付费值"
+
+#: data/scripts/commands/checkpay.lua:45
+msgid "Display current pay values: ${cmd}"
+msgstr "显示当前薪水值：${cmd}"
+

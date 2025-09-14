@@ -12,14 +12,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.7\n"
 
-#: data/scripts/commands/debug.lua:22
-msgid "Enable Debug Panel"
-msgstr "Ativar painel de depuração"
-
-#: data/scripts/commands/debug.lua:26
-msgid "Open the debug panel: ${cmd}"
-msgstr "Abra o painel de depuração: ${cmd}"
-
 #: data/scripts/galaxy/old.lua:98
 msgid "server: Initializing stability value | ${value}"
 msgstr "Servidor: Inicializando o valor da estabilidade | ${value}"
@@ -76,27 +68,27 @@ msgstr "Talvez porque a jornada tenha atingido um certo estágio, ${player} fez 
 msgid "${player} seems to be no longer active, and there are few rumors about him in the stars recently."
 msgstr "${player} parece não estar mais ativo, e há poucos rumores sobre ele nas estrelas recentemente."
 
-#: data/scripts/galaxy/old.lua:246
+#: data/scripts/galaxy/old.lua:248
 msgid "updatePlayerValue: Detected that ${name} logged in for the first time today"
 msgstr "UpdatePlayervalue: detectou que ${name} conectou pela primeira vez hoje"
 
-#: data/scripts/galaxy/old.lua:250 data/scripts/galaxy/old.lua:299
+#: data/scripts/galaxy/old.lua:252 data/scripts/galaxy/old.lua:301
 msgid "Welcome to ${servername}"
 msgstr "Bem -vindo ao ${servername}"
 
-#: data/scripts/galaxy/old.lua:253
+#: data/scripts/galaxy/old.lua:255
 msgid "Good hunting"
 msgstr "Boa caça"
 
-#: data/scripts/galaxy/old.lua:263
+#: data/scripts/galaxy/old.lua:265
 msgid "Successfully registered new player data. Your registration date is: ${date}"
 msgstr "Registrou com sucesso os dados de novos jogadores. Sua data de registro é: ${date}"
 
-#: data/scripts/galaxy/old.lua:300
+#: data/scripts/galaxy/old.lua:302
 msgid "Server Administrator"
 msgstr "Administrador do servidor"
 
-#: data/scripts/galaxy/old.lua:301
+#: data/scripts/galaxy/old.lua:303
 msgid ""
 "Hello, new adventurer!\n"
 "\n"
@@ -128,7 +120,7 @@ msgstr "A frota está pronta, aguardando os pedidos de ${player}."
 
 #: data/scripts/galaxy/pic.lua:63
 msgid "updatePlayerValue: ${name} login information detected"
-msgstr "UpdatePlayervalue: ${name} Informações de login detectadas"
+msgstr "updatePlayerValue: ${name} Informações de login detectadas"
 
 #: data/scripts/galaxy/pic.lua:66
 msgid "Welcome Pioneers"
@@ -171,3 +163,15 @@ msgstr "Comitê de Fundo de Incentivo à Aliança STAR"
 #: data/scripts/player/onlinepay.lua:36
 msgid "Your Active Time Incentive Fund payment has been received: ${amount} credits"
 msgstr "Seu pagamento do fundo de incentivo de tempo ativo foi recebido: ${amount} créditos"
+
+#: data/scripts/commands/checkpay.lua:28
+msgid "Your online pay is ${points}×${multiplier}+${offset}, with a maximum of ${max} = ${calculated}."
+msgstr "Seu pagamento on -line é ${points}×${multiplier}+${offset}, com um máximo de ${max} = ${calculated}."
+
+#: data/scripts/commands/checkpay.lua:41
+msgid "Display pay values"
+msgstr "Exibir valores de pagamento"
+
+#: data/scripts/commands/checkpay.lua:45
+msgid "Display current pay values: ${cmd}"
+msgstr "Exibir valores de pagamento atuais: ${cmd}"
